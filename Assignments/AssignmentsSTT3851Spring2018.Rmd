@@ -16,7 +16,7 @@ output:
 * Sign-up for free accounts on [GitHub](https://github.com) and [Rpubs](https://rpubs.com).
 * When you register for a free individual GitHub account, request a [student discount](https://education.github.com) to obtain a few private repositories as well as unlimited public repositories.  Please use something similar to **first_name_last_name** as your username when you register with GitHub.  For example, my username on GitHub is *lasanthiwatagoda*. If you have a popular name such as John Smith, you may need to provide some other distinquishing characteristic in your username.  Please use the same **username** for your account on Rpubs. 
 * Once you have a GitHub account, send an email to lasanthi@appstate.edu with a Subject line of **STT3851 - GitHub Username**, and tell me in the body of your email your first name, last name, and your GitHub username.  I will then manually add you as a team member to the repository in the Lasanthi-ASU organization that has your name (**Last_name-First_name**).  This repository will be where you store all of your work for this course.  I will also change your repository to a private repository.
-* In class lecture: Review of one and two sample inference, permutation tests, and bootstrap procedures --- take notes
+* [Statistics Review](../Rmarkdown/StatReview.html)--- take notes
 * Homework: 
     + Watch this [video](https://www.youtube.com/watch?v=ZFaWxxzouCY&list=PLjTlxb-wKvXNSDfcKPFH2gzHGyjpeCZmJ&index=3) which provides some background on asking questions.  
     + Read this stackoverflow thread details how to create a [minimal R reproducible example](http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example/5963610#5963610). 

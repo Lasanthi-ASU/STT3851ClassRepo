@@ -1,7 +1,7 @@
 ---
 title: "Day One"
-author: "Alan Arnholt"
-date: Jan 17, 2017
+author: "Lasanthi Watagoda"
+date: Jan 18, 2018
 output: html_document
 ---
 
