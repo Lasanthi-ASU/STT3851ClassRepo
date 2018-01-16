@@ -15,7 +15,7 @@ output:
 
 Make an appointment to see me by clicking https://lasanthi.youcanbook.me/.
 
-Questions related to the class should be addressed with the [piazza account for STT 3851](https://piazza.com/appstate/spring2017/stt/home).
+Questions related to the class should be addressed with the [piazza account for STT 3851](piazza.com/appstate/spring2018/stat3851/home).
 
 
 **Course Description:**  
