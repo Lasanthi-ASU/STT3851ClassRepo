@@ -58,7 +58,7 @@ This course covers elements of data management, descriptive statistics,  and inf
 
 This term we will be using Piazza for class discussion. The system is highly catered to getting you help fast and efficiently from classmates and myself. Rather than emailing questions to the teaching staff, I encourage you to post your questions on Piazza. If you have any problems or feedback for the developers, email team@piazza.com.
 
-[_Click here_](piazza.com/appstate/spring2018/stat3851) to sign up for the class.
+[_Click here_](https://piazza.com/appstate/spring2018/stat3851) to sign up for the class.
 
 [_Click here_](https://piazza.com/appstate/spring2018/stat3851/home) to find our class page at piazza.com.  
 
