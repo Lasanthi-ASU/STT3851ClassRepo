@@ -19,8 +19,8 @@ Note: Click on the `play`button to run the code chunk.
 ###Chunk Options
 
 To hide your code chunk from the output use `echo=FALSE`
-```{r no_code, echo = FALSE}
-hist(cars$speed, xlab = "speed", main = "Histogram of speed")
+```{r no_code, echo = FALSE, fig.align='center'}
+hist(cars$speed, xlab = "speed", main = "Histogram of speed" )
 ?hist
 
 ```
@@ -45,7 +45,7 @@ cor(cars$speed, cars$dist)
 
 For figures, you"ll want to use options like fig.width and fig.height. For example
 
-```{r scatterplot, fig.width=6, fig.height= 4, fig.align='center'}
+```{r scatterplot, fig.width=6, fig.height= 4, fig.align= "left"}
 
 plot(cars$speed, cars$dist)
 
