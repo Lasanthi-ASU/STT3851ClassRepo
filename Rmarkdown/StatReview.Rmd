@@ -62,6 +62,7 @@ pnorm(120, 100, 10, lower = FALSE)
 ```{r message = FALSE, warning = FALSE, fig.align = "center"}
 library(PASWR2)
 summary(CALCULUS)
+head(CALCULUS)
 library(ggplot2)
 ggplot(data = CALCULUS, aes(sample = score, color = calculus)) + 
   geom_qq() + 
@@ -70,18 +71,26 @@ ggplot(data = CALCULUS, aes(sample = score, color = calculus)) +
 
 Assume $\sigma_X = 5$ and $\sigma_Y=12$.
 
+
+
+<!-- # TidyVerse
+#library(dplyr)
+#CALCULUS %>%
+#  group_by(calculus) %>%
+#  summarize(MeanScore = mean(score))
+# sigX = 5, sigY = 12 -->
 ```{r fig.align = "center"}
+
 tapply(CALCULUS$score, CALCULUS$calculus, mean)
-# TidyVerse
-library(dplyr)
-CALCULUS %>%
-  group_by(calculus) %>%
-  summarize(MeanScore = mean(score))
-# sigX = 5, sigY = 12
+
+
 X <- CALCULUS$score[CALCULUS$calculus == "Yes"]
 Y <- CALCULUS$score[CALCULUS$calculus == "No"]
 Zobs <- (mean(X) - mean(Y) -(0)) / (sqrt(25/18 + 144/18))
 Zobs
+
+pval <- 1 - pnorm(Zobs)
+pval
 ```
 
 ## Consider using `z.test()` from `PASWR2`
@@ -94,18 +103,21 @@ z.test(x = X, sigma.x = 5, y = Y, sigma.y = 12, mu = 0, alternative = "greater")
 
 ```{r}
 t.test(X, Y, alternative = "greater")
+
+```
+<!--
 # Discuss: Why is the alternative "less" now...
 t.test(score ~ calculus, data = CALCULUS, alternative = "less")
-```
+-->
 
-## Draw $t_{20.585}$
+## Draw $t_{df}$
 
 ```{r}
 curve(dt(x, 20.585), from = -4, to = 4, n = 500, col = "blue", ylab = "")
 curve(dt(x, 2), from = -4, to = 4, n = 500, col = "purple", add = TRUE)
 curve(dnorm(x), from = -4, to = 4, n = 500, col = "pink", add = TRUE)
 ```
-
+<!--
 ## Randomization test
 
 #### Distribute Cards and go through example before this code {-}
@@ -186,3 +198,5 @@ par(mfrow = c(2, 2))
 plot(slr.mod)
 par(mfrow = c(1, 1))
 ```
+
+-->
