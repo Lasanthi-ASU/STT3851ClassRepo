@@ -119,7 +119,9 @@ git pull upstream gh-pages
     + Watch [Lab: Introduction to R](https://www.youtube.com/watch?v=jwBgGS_4RQA) (14:12)
 <!--* Lecture - Bias Variance Tradeoff - Take notes - [Slides](../Rmarkdown/BiasVarDer.pdf) -->
 * Lecture - Chapter 02 - Take Notes
-* Reproduce [Modified Introduction to R](../Rmarkdown/LabChap2.html).  Submit your html file to [CrowdGrader](	https://www.crowdgrader.org/crowdgrader/venues/view_venue/2743) no later than 5 pm Feb 09.
+* Reproduce [Modified Introduction to R by Dr. Arnholt](https://stat-ata-asu.github.io/STT5812CourseRepo/Rmarkdown/RmarkdownAssignment.html).  
+
+<!--Submit your html file to [CrowdGrader](	https://www.crowdgrader.org/crowdgrader/venues/view_venue/2743) no later than 5 pm Feb 09.-->
 
 
 **Feb 8:**
