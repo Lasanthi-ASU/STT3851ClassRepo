@@ -1,0 +1,86 @@
+---
+title: "K -Nearest Neighbour Algorithm"
+author: "Dr. Lasanthi Watagoda"
+date: "2/12/2018"
+output: html_document
+---
+
+## Know your data
+
+<div style="text-align:center">
+<p float="center">
+  <img src="../2-13-18/iris_flowers.png" width="400" />
+
+</p>
+</div>
+
+
+
+```{r}
+library(class)
+
+data(iris)
+str(iris)
+table(iris$Species)
+head(iris)
+#iris
+
+```
+
+
+## Mixup to remove the order.
+
+```{r}
+gp <- runif(nrow(iris)) # mix up the data set using this order
+
+iris <- iris[order(gp),] 
+head(iris)
+```
+
+
+## Normalize your data
+
+```{r}
+summary(iris[,c(1,2,3,4)]) # should we Normalize?
+
+#Define your own Normalize function
+
+normalize <- function(x){
+  
+  return((x - min(x))/(max(x)-min(x)))
+}
+
+#Use lapply to normalize multiple columns at once.
+
+iris_n <- as.data.frame(lapply(iris[,c(1,2,3,4)],normalize))
+str(iris_n)
+summary(iris_n)
+
+```
+
+
+## Tranning X, Y and Test X, Y
+```{r}
+
+iris_train <- iris_n[1:129,] # Training X
+iris_test <- iris_n[130:150,] # Test X
+
+iris_train_target <- iris[1:129,5] # Training Y
+iris_test_target <- iris[130:150,5] # Test Y
+```
+
+```{r}
+#require(class)
+
+k <- 20 # sqrt(n) make it odd
+
+m1 <- knn(train = iris_train, test = iris_test, cl = iris_train_target, k = k)
+```
+
+## Confusion Metrix
+
+```{r}
+table(iris_test_target, m1) #x and y
+
+```
+
