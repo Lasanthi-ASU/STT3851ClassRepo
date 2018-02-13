@@ -140,13 +140,14 @@ git pull upstream gh-pages
 
 * Before class:
     + Refer to [_bookdown: Authoring Books and Technical Documents with R Markdown_](https://bookdown.org/yihui/bookdown/) as needed
-* Reproduce [Writing Assignment](../Rmarkdown/WritingAssignment.html).  Submit your html file to [CrowdGrader](https://www.crowdgrader.org/crowdgrader/venues/view_venue/2745) no later than 5 pm Feb 17.
+* [Bias-Variance Trade-Off](../Rmarkdown/BiasVariance.pdf)
 * Chapter 02 Lab
 
 
 **Feb 15:**
 
 * Chapter 02 Lab
+* Reproduce [Writing Assignment](../Rmarkdown/WritingAssignment.html).  Submit your html file to [CrowdGrader](https://www.crowdgrader.org/crowdgrader/venues/view_venue/2745) no later than 5 pm Feb 17.
 * Quiz #5
 
 **Feb 20:**

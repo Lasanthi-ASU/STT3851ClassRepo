@@ -1,12 +1,13 @@
 ---
 title: "Bias Variance Tradeoff"
-author: "Alan Arnholt"
+author: "Dr. Lasanthi Watagoda"
 date: 'Last Updated on: `r format(Sys.time(), "%b %d, %Y at %X")`'
 output:
-  html_document:
+    pdf_document:
     css: ../CSS/asu.css
     highlight: textmate
     theme: yeti
+    
 ---
 
 ```{r, label = "SETUP", echo = FALSE, results= 'hide', message = FALSE, warning = FALSE}
@@ -42,6 +43,13 @@ plot(xs, ys, pch = 19, col = "blue", xlim = c(5, 9), ylim = c(-2, 2), cex = 0.25
 abline(lm(ys ~ 1))
 par(mfrow = c(1, 1))
 ```
+
+
+
+
+
+
+
 
 ## Fitting a simple model with just an intercept
 
