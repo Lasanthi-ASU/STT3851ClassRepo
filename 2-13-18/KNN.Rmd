@@ -23,7 +23,8 @@ data(iris)
 str(iris)
 table(iris$Species)
 head(iris)
-#iris
+iris
+dim(iris)
 
 ```
 
@@ -32,8 +33,9 @@ head(iris)
 
 ```{r}
 gp <- runif(nrow(iris)) # mix up the data set using this order
-
+gp
 iris <- iris[order(gp),] 
+#iris
 head(iris)
 ```
 
@@ -72,7 +74,7 @@ iris_test_target <- iris[130:150,5] # Test Y
 ```{r}
 #require(class)
 
-k <- 20 # sqrt(n) make it odd
+k <-13 # sqrt(n) make it odd
 
 m1 <- knn(train = iris_train, test = iris_test, cl = iris_train_target, k = k)
 ```
@@ -80,7 +82,8 @@ m1 <- knn(train = iris_train, test = iris_test, cl = iris_train_target, k = k)
 ## Confusion Metrix
 
 ```{r}
-table(iris_test_target, m1) #x and y
+CM <-table(iris_test_target, m1)#x and y
+CM  
 
 ```
 

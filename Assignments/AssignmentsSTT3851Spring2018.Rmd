@@ -148,7 +148,6 @@ git pull upstream gh-pages
 **Feb 15:**
 
 * Chapter 02 Lab
-* Reproduce [Writing Assignment](../Rmarkdown/WritingAssignment.html).  Submit your html file to [CrowdGrader](https://www.crowdgrader.org/crowdgrader/venues/view_venue/2745) no later than 5 pm Feb 17.
 * Quiz #5
 
 **Feb 20:**
@@ -160,6 +159,8 @@ git pull upstream gh-pages
     + Watch [Multiple Linear Regression and Interpreting Regression Coefficients ](https://www.youtube.com/watch?v=1hbCJyM9ccs) (15:38)
 <!--* Discuss [Chapter 2 and 3 material](../Rmarkdown/Chap2Slides.html)-->
 * Lecture - Chapter 03 (3.1, 3.2)
+* Reproduce [Writing Assignment](../Rmarkdown/WritingAssignment.html).  Submit your html file to github 2-20-18 folder, no later than 5 pm Feb 22.
+
 
 
 **Feb 22:**
@@ -169,13 +170,13 @@ git pull upstream gh-pages
     + Watch [Model Selection and Qualitative Predictors](https://www.youtube.com/watch?v=3T6RXmIHbJ4) (14:51)
     + Watch [Interactions and Nonlinearity](https://www.youtube.com/watch?v=IFzVxLv0TKQ) (14:16)
     + Watch [Lab: Linear Regression](https://www.youtube.com/watch?v=5ONFqIk3RFg) (22:10)
-* Lecture - Chapter 03 (3.2, 3.3) - Take Notes
+* Lecture - Chapter 03 (3.1, 3.2) - Take Notes
 * Quiz #6
 
 **Feb 27:**
 
-* Lecture - Chapter 03 (3.3, 3.4) - Take Notes
-* Reproduce [Lab: Linear Regression](../Rmarkdown/LabChap3.html).  Submit your html file to [CrowdGrader](https://www.crowdgrader.org/crowdgrader/venues/view_venue/2746) no later than 5 pm Mar 3.
+* Lecture - Chapter 03 (3.2, 3.3) - Take Notes
+* Reproduce [Lab: Linear Regression](../Rmarkdown/LabChap3.html).  Submit your html file to github no later than 5 pm Mar 3.
 
 
 **Mar 1:**
@@ -183,15 +184,15 @@ git pull upstream gh-pages
 * Before class:
     + [Start Project 1](http://www.amstat.org/publications/jse/v16n2/datasets.pardoe.html) - Read the hyperlinked paper.  
     + The data set can be downloaded from http://www.amstat.org/publications/jse/datasets/homes76.dat.txt, while the code book is available from http://www.amstat.org/publications/jse/datasets/homes76.txt
-* Reproduce [Lab: Linear Regression](../Rmarkdown/LabChap3.html).  Submit your html file to [CrowdGrader](https://www.crowdgrader.org/crowdgrader/venues/view_venue/2746) no later than 5 pm Mar 3.
-* Lecture - Chapter 03 (3.4, 3.5) - Take Notes
+* Reproduce [Lab: Linear Regression](../Rmarkdown/LabChap3.html).  Submit your html file to github no later than 5 pm Mar 13.
+* Lecture - Chapter 03 (3.3, 3.4) - Take Notes
 * Quiz #7
 
 **~~Mar 05 - Mar 09:~~ ** **No Class - Spring Break**
 
 **Mar 13:**
 
-* Review for Test 1
+* Lecture - Chapter 03 (3.4, 3.5) - Take Notes
 <!--* [Work on Project 1](../Rmarkdown/DirectionsMHP.html)-->
 <!--* [Code for class notes](../Rmarkdown/BodyTemperatures.html)-->
 
