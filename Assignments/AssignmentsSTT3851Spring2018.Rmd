@@ -192,7 +192,7 @@ git pull upstream gh-pages
 
 **Mar 13:**
 
-* [Directions for the complete project 1](../Rmarkdown/DirectionsMHP2018.html)
+* [Directions for the complete project 1](../Rmarkdown/DirectionsMHP2018.html). Project Due Thursday the 15th before 5pm.
 * Lecture - Chapter 03 (3.4, 3.5) - Take Notes
 <!--* [Work on Project 1](../Rmarkdown/DirectionsMHP.html)-->
 <!--* [Code for class notes](../Rmarkdown/BodyTemperatures.html)-->
