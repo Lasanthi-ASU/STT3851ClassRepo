@@ -192,6 +192,7 @@ git pull upstream gh-pages
 
 **Mar 13:**
 
+* [Directions for complete project 1](../Classes/ISLR/MHP/DirectionsMHP.html)
 * Lecture - Chapter 03 (3.4, 3.5) - Take Notes
 <!--* [Work on Project 1](../Rmarkdown/DirectionsMHP.html)-->
 <!--* [Code for class notes](../Rmarkdown/BodyTemperatures.html)-->
