@@ -201,6 +201,7 @@ git pull upstream gh-pages
 **Mar 15:**
 
 * Lecture - Chapter 03 (3.4, 3.5) - Take Notes
+* [Chapter 3 Applied Problems](../3-15-18/ch3_applied.pdf)
 * Quiz
 
 
