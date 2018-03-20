@@ -37,7 +37,7 @@ output:
     + [Clone a GitHub Repo with RStudio (Video)](https://www.youtube.com/watch?v=YxZ8J2rqhEM) (5:05)
  
 * [Statistics Review](../Rmarkdown/StatReview.html)--- take notes
-* Quiz #1
+
 * Read Chapters 1-2 of [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)
 * Link to [Day One Activity and Code](../Rmarkdown/DayOne.html)
 
@@ -58,7 +58,7 @@ output:
 <!-- * [Schistosomiasis](../Rmarkdown/Schistosomiasis.html) -->
 * Update README file in private repository
 * Use an avatar or picture on your GitHub account
-* Quiz #2
+
 
 
 **Jan 30:**
@@ -109,7 +109,7 @@ git pull upstream gh-pages
     + Watch [Assessing Model Accuracy and Bias-Variance Trade-off](https://www.youtube.com/watch?v=VusKAosxxyk) (10:04)
 <!--* Lecture - Bias Variance Tradeoff - Take notes-->
 * Lecture - Chapter 02 - Take Notes
-* Quiz #3
+* Quiz #1
 
 **Feb 6:**
 
@@ -133,7 +133,7 @@ git pull upstream gh-pages
 <!--* Go over [Chapter 2 Graphs](../Rmarkdown/Chap2Slides.html)-->
 * Discuss flexible models and when to use them
 * Reproduce [Modified Introduction to R](../Rmarkdown/LabChap2.html).  Submit your html file to [CrowdGrader](	https://www.crowdgrader.org/crowdgrader/venues/view_venue/2743) no later than 5 pm Feb 10.
-* Quiz #4
+* Quiz #2
 
 
 **Feb 13:**
@@ -148,7 +148,7 @@ git pull upstream gh-pages
 **Feb 15:**
 
 * Chapter 02 Lab
-* Quiz #5
+* Quiz #3
 
 **Feb 20:**
 
@@ -171,7 +171,7 @@ git pull upstream gh-pages
     + Watch [Interactions and Nonlinearity](https://www.youtube.com/watch?v=IFzVxLv0TKQ) (14:16)
     + Watch [Lab: Linear Regression](https://www.youtube.com/watch?v=5ONFqIk3RFg) (22:10)
 * Lecture - Chapter 03 (3.1, 3.2) - Take Notes
-* Quiz #6
+* Quiz #4
 
 **Feb 27:**
 
@@ -186,7 +186,7 @@ git pull upstream gh-pages
     + The data set can be downloaded from http://www.amstat.org/publications/jse/datasets/homes76.dat.txt, while the code book is available from http://www.amstat.org/publications/jse/datasets/homes76.txt
 * Reproduce [Lab: Linear Regression](../Rmarkdown/LabChap3.html).  Submit your html file to github no later than 5 pm Mar 13.
 * Lecture - Chapter 03 (3.3, 3.4) - Take Notes
-* Quiz #7
+* Quiz #5
 
 **~~Mar 05 - Mar 09:~~ ** **No Class - Spring Break**
 
@@ -202,7 +202,7 @@ git pull upstream gh-pages
 
 * Lecture - Chapter 03 (3.4, 3.5) - Take Notes
 * [Chapter 3 Applied Problems](../3-15-18/ch3_applied.pdf)
-* Quiz
+* Quiz 06
 
 
 
@@ -221,35 +221,32 @@ git pull upstream gh-pages
 
 **Mar 22:**
 
-<!-- * Lecture - Chapter 05 - Take Notes
- * Discuss [Cross-Validation Hand Out](../Rmarkdown/Cross-ValidationInClassHO.html)-->
-
-* Test 1 (Coveres Ch 2 and Ch 3)
-
-
-**Mar 27:**
-
-
 * Before class:
     + Read/re-read chapter 5 [ISLR](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf)
     + Watch [Lab: Cross-Validation](https://www.youtube.com/watch?v=6dSXlqHAoMk) (11:21)
 
 * Lecture - Chapter 05 - Take Notes
-<!--* Discuss [Cross-Validation Hand Out](../Rmarkdown/Cross-ValidationInClassHO.html)-->
+
 * [Reproduce _Lab: Cross-Validation_](../Rmarkdown/LabCrossValidation.html)
+
+ 
+
+**Mar 27:**
+
+* Test 1 (Coveres Ch 2 and Ch 3)
+
 
 
 **Mar 29:**
 
 
-* Lecture - Chapter 05 - Take Notes
+
+* Lecture - Chapter 06 - Take Notes
 <!-- [Finish Cross-Validation Hand Out](../Rmarkdown/Cross-ValidationInClassHO.html)-->
-* Complete [Reproduce _Lab: Cross-Validation_](../Rmarkdown/LabCrossValidation.html).  Submit your html file to [CrowdGrader](https://www.crowdgrader.org/crowdgrader/venues/view_venue/2753) no later than 5 pm March 31.
 
+* Complete [Reproduce _Lab: Cross-Validation_](../Rmarkdown/LabCrossValidation.html).  Submit your html file  no later than 5 pm March 29th.
 
-
-
-* Quiz #9
+* Quiz #7
 
 **~~Apr 02-03:~~ No Class - State Holidays**
 
@@ -259,9 +256,11 @@ git pull upstream gh-pages
     + Watch [Estimating Test Error Using Mallow’s Cp, AIC, BIC, Adjusted R-squared](https://www.youtube.com/watch?v=LkifE44myLc) (14:06)
     + Watch [Estimating Test Error Using Cross-Validation](https://www.youtube.com/watch?v=3p9JNaJCOb4) (8:43)
 * [Notes on Credit Problem](../Rmarkdown/CreditProblemMore.html)
-* Commit your final changes for Project 1 to your private repository and email the instructor your SHA prior to 10am April 05, 2018.  Use the subject line "Project 1-STT3851-Last_name First_name-SHA#" in your email.
+<!--* Commit your final changes for Project 1 to your private repository and email the instructor your SHA prior to 10am April 05, 2018.  Use the subject line "Project 1-STT3851-Last_name First_name-SHA#" in your email.-->
 
-* Lecture - Chapter 05 - Take Notes
+* Quiz 8
+
+* Lecture - Chapter 06 - Take Notes
 
 * Start Project 2 
 * [Example Template Directory](https://github.com/STAT-ATA-ASU/STT3851Spring2016/blob/gh-pages/BDbetaTemplate)
@@ -289,7 +288,7 @@ git pull upstream gh-pages
 
 
 * Lecture - Chapter 06 - Take Notes
-* Quiz #10
+* Quiz #9
 
 
 
@@ -315,7 +314,7 @@ git pull upstream gh-pages
     + Watch [Lab: Ridge Regression and Lasso ](https://www.youtube.com/watch?v=1REe3qSotx8) (16:34)
     
 * Lecture - Chapter 06 - Take Notes
-* Quiz #11
+* Quiz #10
 
 **Apr 24:**
 
@@ -324,7 +323,8 @@ git pull upstream gh-pages
 
 **Apr 26:**
 
-* Lecture - Chapter 06 - Take Notes    
+* Lecture - Chapter 06 - Take Notes  
+* Quiz 11
 * Work on Project 2
 
 
