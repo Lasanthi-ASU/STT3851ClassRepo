@@ -342,6 +342,7 @@ git pull upstream gh-pages
 * Final Exam 
 
 * [data file 1](SMELTPOT.txt)
+* [data file 2](STREETVN.txt)
 
 #[Home Page](http://Lasanthi-ASU.github.io/STT3851ClassRepo/) - [Syllabus](http://stat-ata-asu.github.io/STT3851ClassRepo/Syllabus/STT3851Spring2017Syllabus.html) - [Piazza](https://piazza.com/appstate/spring2017/stt/home) {-}
 
