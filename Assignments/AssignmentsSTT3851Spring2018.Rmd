@@ -244,7 +244,7 @@ git pull upstream gh-pages
 * Lecture - Chapter 06 - Take Notes
 <!-- [Finish Cross-Validation Hand Out](../Rmarkdown/Cross-ValidationInClassHO.html)-->
 
-* Complete [Reproduce _Lab: Cross-Validation_](../Rmarkdown/LabCrossValidation.html).  Submit your html file  no later than 5 pm March 29th.
+* Complete [Reproduce _Lab: Cross-Validation_](../Rmarkdown/LabCrossValidation.html).  Submit your html file  no later than 5 pm April 05th.
 
 * Quiz #7
 
@@ -262,9 +262,10 @@ git pull upstream gh-pages
 
 * Lecture - Chapter 06 - Take Notes
 
-* Start Project 2 
+<!--* Start Project 2 
 * [Example Template Directory](https://github.com/STAT-ATA-ASU/STT3851Spring2016/blob/gh-pages/BDbetaTemplate)
-* Use the [housedata.csv](https://github.com/STAT-ATA-ASU/STT3851Spring2016/raw/gh-pages/Data/housedata.csv) file - See [King County Housing Data](../Rmarkdown/KingCounty.html)
+* Use the [housedata.csv](https://github.com/STAT-ATA-ASU/STT3851Spring2016/raw/gh-pages/Data/housedata.csv) file - See [King County Housing Data](../Rmarkdown/KingCounty.html) -->
+
 
 
 
@@ -315,6 +316,7 @@ git pull upstream gh-pages
     
 * Lecture - Chapter 06 - Take Notes
 * Quiz #10
+* Start  Project 2
 
 **Apr 24:**
 
