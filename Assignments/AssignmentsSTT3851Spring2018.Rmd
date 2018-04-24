@@ -316,11 +316,11 @@ git pull upstream gh-pages
     
 * Lecture - Chapter 06 - Take Notes
 * Quiz #10
-* Start  Project 2
+
 
 **Apr 24:**
 
-* Lecture - Chapter 06 - Take Notes
+* Project 2: [Start Here](../Rmarkdown/Project2.html)
 
 
 **Apr 26:**
