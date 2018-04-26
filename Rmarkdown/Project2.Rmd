@@ -64,7 +64,7 @@ housedataT <- housedataT[, -1]
 
 ```{r , message = FALSE, warning = FALSE}
 library(DT)
-datatable(housedata[, 2:10], rownames = FALSE)
+datatable(housedata[, 12:20], rownames = FALSE)
 ```
 
 Consider predicting the price (`price`) of a house based on a certain feature (`sqft_living`).  Start by graphing the relationship.
@@ -130,6 +130,90 @@ p6 <- ggplot(data = housedata, aes(x = sqft_living, y = price)) +
         theme_bw()
 p6
 ```
+
+
+
+
+
+
+<!-- LAB 2 HELP FOR STUDENTS-->
+
+```{r}
+library(car)     # red line affected by outlier, green ignoring the outlier (robust)
+scatterplot(x =housedata$price, y=housedata$bedrooms)       #( not much dependent)
+
+scatterplot(x =housedata$bedrooms, y=housedata$bathrooms)   #( dependent excluding the 33 outlier)
+scatterplot(x =housedata$price, y=housedata$bathrooms)      #( dependent)
+scatterplot(x =housedata$price, y=housedata$sqft_lot)       #( not dependent)
+scatterplot(x =housedata$price, y=housedata$view)           #( dependent but mostly view is 0 so not dependent)
+scatterplot(x =housedata$price, y=housedata$grade)          #( dependent)
+scatterplot(x =housedata$price, y=housedata$floors)         #( not dependent from boxplot)
+scatterplot(x =housedata$price, y=housedata$condition)      #( nearly not dependent)
+scatterplot(x =housedata$price, y=housedata$waterfront)     #( not dependent as nearly no waterfront)
+scatterplot(x =housedata$price, y=housedata$bedrooms)       #( not much dependent)
+scatterplot(x =housedata$price, y=housedata$sqft_above)     #( dependent)
+scatterplot(x =housedata$price, y=housedata$sqft_basement)  #( dependent)
+#scatterplot(x =housedata$price, y=housedata$age)            #( low negative dependent)
+scatterplot(x =housedata$price, y=housedata$zipcode)        
+#scatterplot(x =housedata$price, y=housedata$renage)         #( not dependent as very less houses are renovated)
+# scatterplot using ggplot
+ggplot(data = housedata, mapping = aes(x = sqft_living, y = price)) + geom_point(colour = 'skyblue') + geom_smooth(method = 'lm')
+
+
+```
+
+
+
+```{r}
+
+# creating a data frame excluding id,date,sqft_living15,sqft_lot15, lat,long,yr_built,yr_renovated,rate
+housedata1<- housedata[ ,c(2:7,9,12,13,17:20)]
+
+# Correlation matric
+cor(housedata1)
+
+# Corrplot
+library(corrplot)
+corrplot(cor(housedata1))
+
+```
+
+
+
+```{r}
+# converting catagorical variables from numeric variables ( bedroom, bathroom, grade ,zipcode)
+#housedata$bedrooms <- as.factor(housedata$bedrooms)
+#housedata$bathrooms <- as.factor(housedata$bathrooms)
+#housedata$grade <- as.factor(housedata$grade)
+#housedata$zipcode <- as.factor(housedata$zipcode)
+
+# Checking structure now
+str(housedata)
+
+```
+
+```{r}
+model1 <- lm(price~ sqft_living + bedrooms + bathrooms + grade + sqft_above,data = housedata)
+summary(model1)
+anova(model1)
+```
+
+
+```{r}
+model2 <- lm(price~ sqft_living + bedrooms + bathrooms + grade + sqft_above + zipcode,data = housedata)
+summary(model2)
+anova(model2)
+```
+
+```{r}
+library(randomForest)
+model3 <- randomForest(price ~  bathrooms + sqft_above,
+                            data = housedata)
+
+```
+
+<!-- LAB 2 HELP FOR STUDENTS END-->
+
 
 ## What features might be visible in a scatterplot?
 
@@ -210,11 +294,20 @@ ggmap(KingMap) +
 * Suppose your final model is `mod.all`.
 
 ```{r}
+Doe_John <- predict(model2, newdata = housedataT)
+head(Yourlastname_Yourfirstname)
+```
+
+```{r}
 Yourlastname_Yourfirstname <- predict(mod.all, newdata = housedataT)
 head(Yourlastname_Yourfirstname)
 ```
 
 * Use `write.csv()` to create the vector `Yourlastname_Yourfirstname.csv`
+
+```{r, eval = FALSE}
+write.csv(Doe_John, file = "Doe_John.csv")
+```
 
 ```{r, eval = FALSE}
 write.csv(Yourlastname_Yourfirstname, file = "Yourlastname_Yourfirstname.csv")
