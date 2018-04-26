@@ -32,9 +32,9 @@ Brain_Jessica <- read.csv("Brain_Jessica.csv")
 BrainJessica <- sqrt(mean((Brain_Jessica$x - APRICE$price)^2))
 names(BrainJessica) <- "BrainJessica"
 #
-#Bujold_Brandon <- read.csv("Bujold_Brandon.csv")
-#BujoldBrandon <- sqrt(mean((Bujold_Brandon$x - APRICE$price)^2))
-#names(BujoldBrandon) <- "BujoldBrandon"
+Bujold_Brandon <- read.csv("Bujold_Brandon.csv")
+BujoldBrandon <- sqrt(mean((Bujold_Brandon$x - APRICE$price)^2))
+names(BujoldBrandon) <- "BujoldBrandon"
 #
 Burkett_Kaitlyn <- read.csv("Burkett_Kaitlyn.csv")
 BurkettKaitlyn <- sqrt(mean((Burkett_Kaitlyn$x - APRICE$price)^2))
@@ -141,7 +141,7 @@ names(BeatThis) <- "BeatThis"
 
 
 ```{r, echo = FALSE}
-Leader <- data.frame(SMSPE = c(BeatThis, DoeJohn,BrainJessica,VickMaya,TsraManuela,FisherTameshia,FoxMichael,MitchellEmily,SmithAbigail,WellmanJoshua,NewmanLeah,JonesBowen,OsborneDaniel,EhlingerLauren,ParsonsAdam,AdjeiChrista,AlexanderJames,BurkettKaitlyn,HargraveMalik,MedinaIsaac,HursaSara,NooneConnor,WidmanSamantha,WilsonCourtney,EllisLander))
+Leader <- data.frame(SMSPE = c(BeatThis, DoeJohn,BrainJessica,VickMaya,TsraManuela,FisherTameshia,FoxMichael,MitchellEmily,SmithAbigail,WellmanJoshua,NewmanLeah,JonesBowen,OsborneDaniel,EhlingerLauren,ParsonsAdam,AdjeiChrista,AlexanderJames,BurkettKaitlyn,HargraveMalik,MedinaIsaac,HursaSara,NooneConnor,WidmanSamantha,WilsonCourtney,BujoldBrandon,EllisLander))
 ```
 
 ```{r, echo = FALSE}
