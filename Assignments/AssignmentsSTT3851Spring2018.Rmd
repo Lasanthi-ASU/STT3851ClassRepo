@@ -333,7 +333,7 @@ git pull upstream gh-pages
 
 **May 1:**
 
-* Turn in Project 2 - NLT May 01, 10 am
+* Turn in Project 2 - NLT May 02, 10 am
 * Make sure a single `.Rmd` with the sections outlined in the [Example Paper](../BDbetaTemplate/TemplateBookDown.html) is in your `Project2` directory under your private course repository.
 * Send an email to the instructor using a subject of "House Data Predictions" with an attached vector (csv file) of your predictions using the data set `housedataTEST.csv`.  Note: your vector should contain 4229 predictions. 
 

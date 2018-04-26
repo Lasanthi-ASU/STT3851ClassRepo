@@ -1,6 +1,6 @@
 ---
 title: "Modeling the interest rate charged by the [Lending Club](http://www.lendingclub.com/)"
-author: "Alan Arnholt"
+author: "Lasanthi Watagoda"
 date: '`r format(Sys.time(), "%b %d, %Y")`'
 bibliography:
 - ./BIB/CV.bib
