@@ -136,7 +136,7 @@ p6
 
 
 
-<!-- LAB 2 HELP FOR STUDENTS-->
+<!-- LAB 2 HELP FOR STUDENTS
 
 ```{r}
 library(car)     # red line affected by outlier, green ignoring the outlier (robust)
@@ -162,6 +162,7 @@ ggplot(data = housedata, mapping = aes(x = sqft_living, y = price)) + geom_point
 
 ```
 
+-->
 
 
 ```{r}
@@ -178,7 +179,7 @@ corrplot(cor(housedata1))
 
 ```
 
-
+<!--
 
 ```{r}
 # converting catagorical variables from numeric variables ( bedroom, bathroom, grade ,zipcode)
@@ -212,7 +213,7 @@ model3 <- randomForest(price ~  bathrooms + sqft_above,
 
 ```
 
-<!-- LAB 2 HELP FOR STUDENTS END-->
+-->
 
 
 ## What features might be visible in a scatterplot?
