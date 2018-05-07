@@ -1,7 +1,6 @@
 ---
-title: "Bias Variance Tradeoff"
-author: "Dr. Lasanthi Watagoda"
-date: 'Last Updated on: `r format(Sys.time(), "%b %d, %Y at %X")`'
+title: "Bias Variance Tradeoff Example"
+
 output:
     pdf_document:
     css: ../CSS/asu.css
