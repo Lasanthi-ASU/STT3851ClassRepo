@@ -3,18 +3,17 @@ title: "Welcome"
 ---
 
 
-* The course syllabus is stored in the [`Syllabus`](./Syllabus/STT3851Spring2017Syllabus.html) directory of the STT 3851 repository.
+* The course syllabus is stored in the [`Syllabus`](./Syllabus/STT3851Spring2019Syllabus.html) directory of the STT 3851 repository.
 
-* Course pacing and assignments are stored in the [`Assignments`](./Assignments/AssignmentsSTT3851Spring2018.html) directory of the STT 3851 repository.
+* Course pacing and assignments are stored in the [`Assignments`](./Assignments/AssignmentsSTT3851Spring2019.html) directory of the STT 3851 repository.
 
 * [Class RStudio Server](https://mathr.math.appstate.edu) (you must be registered in the course to access the server)
 
-* [Flow Control](./Rmarkdown/FlowControl.html)
+ <!--* [Flow Control](./Rmarkdown/FlowControl.html)-->
 
-* [The Bootstrap](./Rmarkdown/TheBootstrap.html)
+<!--* [The Bootstrap](./Rmarkdown/TheBootstrap.html)-->
 
-* Questions related to course materials should be addressed with the [piazza account for STT 3851](https://piazza.com/appstate/spring2017/stt/home).
-
+***
 
 ## Resources you may find helpful
 
