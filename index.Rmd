@@ -7,7 +7,10 @@ title: "Welcome"
 
 * Course pacing and assignments are stored in the [`Assignments`](./Assignments/AssignmentsSTT3851Spring2019.html) directory of the STT 3851 repository.
 
-* [Class RStudio Server](https://mathr.math.appstate.edu) (you must be registered in the course to access the server)
+
+* [Class RStudio Server](https://mathr.math.appstate.edu) (you must be registered in the course to access the server).
+
+* Click [here](https://goo.gl/forms/965QRwCg0DKdhqXz1) to record your attendance.
 
  <!--* [Flow Control](./Rmarkdown/FlowControl.html)-->
 
