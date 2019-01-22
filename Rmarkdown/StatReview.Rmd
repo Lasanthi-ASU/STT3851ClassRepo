@@ -9,9 +9,13 @@ output:
 ---
 
 ```{r, label = "SETUP", echo = FALSE, results= 'hide', message = FALSE, warning = FALSE}
+
 set.seed(123)
+
 library(knitr)
+
 knitr::opts_chunk$set(comment = NA,  fig.align = 'center', fig.height = 5, fig.width = 5, warning = FALSE, message = FALSE, tidy.opts=list(blank = TRUE, width.cutoff= 75))
+
 ```
 
 # Notation
@@ -59,6 +63,8 @@ The $P(X \geq 120) = \int_{120}^{\infty}f(x)\,dx = `r ans`.$
 pnorm(120, 100, 10, lower = FALSE)
 ```
 
+# Plots
+
 ```{r message = FALSE, warning = FALSE, fig.align = "center"}
 library(PASWR2)
 summary(CALCULUS)
@@ -68,6 +74,23 @@ ggplot(data = CALCULUS, aes(sample = score, color = calculus)) +
   geom_qq() + 
   theme_bw()
 ```
+
+
+
+```{r echo=FALSE}
+ggplot(data = CALCULUS, aes(x = score)) + 
+  geom_histogram() 
+
+```
+
+```{r echo=FALSE}
+ggplot(data = CALCULUS, aes(x = score)) + 
+  geom_histogram(binwidth = 5, color = "green") + 
+facet_wrap(~calculus)
+```
+
+
+# Testing Hypothesis.
 
 Assume $\sigma_X = 5$ and $\sigma_Y=12$.
 
@@ -79,11 +102,24 @@ Assume $\sigma_X = 5$ and $\sigma_Y=12$.
 #  group_by(calculus) %>%
 #  summarize(MeanScore = mean(score))
 # sigX = 5, sigY = 12 -->
+
+
+
+
 ```{r fig.align = "center"}
 
 tapply(CALCULUS$score, CALCULUS$calculus, mean)
 
+```
 
+
+## The harder way!
+
+Let's take $X$ to be the scores of the students who have taken calculus before and $Y$ to be the scores of the students who have not taken calculus before.
+
+Test the hypothesis $H_0: \mu_X = \mu_Y$ with the appropriate alternative.
+
+```{r}
 X <- CALCULUS$score[CALCULUS$calculus == "Yes"]
 Y <- CALCULUS$score[CALCULUS$calculus == "No"]
 Zobs <- (mean(X) - mean(Y) -(0)) / (sqrt(25/18 + 144/18))
@@ -93,7 +129,7 @@ pval <- 1 - pnorm(Zobs)
 pval
 ```
 
-## Consider using `z.test()` from `PASWR2`
+## Consider using `z.test()` from `PASWR2` (The easy way!)
 
 ```{r}
 z.test(x = X, sigma.x = 5, y = Y, sigma.y = 12, mu = 0, alternative = "greater")
@@ -117,6 +153,17 @@ curve(dt(x, 20.585), from = -4, to = 4, n = 500, col = "blue", ylab = "")
 curve(dt(x, 2), from = -4, to = 4, n = 500, col = "purple", add = TRUE)
 curve(dnorm(x), from = -4, to = 4, n = 500, col = "pink", add = TRUE)
 ```
+
+
+
+
+
+
+
+
+
+
+
 <!--
 ## Randomization test
 
