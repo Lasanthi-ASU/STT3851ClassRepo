@@ -115,7 +115,7 @@ tapply(CALCULUS$score, CALCULUS$calculus, mean)
 
 ## The harder way!
 
-Let's take $X$ to be the scores of the students who have taken calculus before and $Y$ to be the scores of the students who have not taken calculus before.
+Let's take $X$ to be the scores of the students who have **taken calculus** before and $Y$ to be the scores of the students who have *not taken calculus* before.
 
 Test the hypothesis $H_0: \mu_X = \mu_Y$ with the appropriate alternative.
 

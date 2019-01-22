@@ -195,7 +195,7 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">Statistics Review</h1>
 <h4 class="author"><em>Dr. Lasanthi Watagoda</em></h4>
-<h4 class="date"><em>Last Updated on: Jan 21, 2019 at 10:25:06 PM</em></h4>
+<h4 class="date"><em>Last Updated on: Jan 21, 2019 at 10:33:42 PM</em></h4>
 
 </div>
 
@@ -284,7 +284,7 @@ ggplot(data = CALCULUS, aes(sample = score, color = calculus)) +
 62.61111 86.94444 </code></pre>
 <div id="the-harder-way" class="section level2">
 <h2><span class="header-section-number">3.1</span> The harder way!</h2>
-<p>Let’s take <span class="math inline">\(X\)</span> to be the scores of the students who have taken calculus before and <span class="math inline">\(Y\)</span> to be the scores of the students who have not taken calculus before.</p>
+<p>Let’s take <span class="math inline">\(X\)</span> to be the scores of the students who have <strong>taken calculus</strong> before and <span class="math inline">\(Y\)</span> to be the scores of the students who have <em>not taken calculus</em> before.</p>
 <p>Test the hypothesis <span class="math inline">\(H_0: \mu_X = \mu_Y\)</span> with the appropriate alternative.</p>
 <pre class="r"><code>X &lt;- CALCULUS$score[CALCULUS$calculus == &quot;Yes&quot;]
 Y &lt;- CALCULUS$score[CALCULUS$calculus == &quot;No&quot;]
