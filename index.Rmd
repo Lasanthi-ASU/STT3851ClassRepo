@@ -10,7 +10,7 @@ title: "Welcome"
 
 * [Class RStudio Server](https://mathr.math.appstate.edu) (you must be registered in the course to access the server).
 
-
+* Click [here](https://goo.gl/forms/uVbDu3i5ZubmS6BG2) to record your attendance.
 
  <!--* [Flow Control](./Rmarkdown/FlowControl.html)-->
 
