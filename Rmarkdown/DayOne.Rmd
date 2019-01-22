@@ -1,5 +1,5 @@
 ---
-title: "Day One"
+title: "Data frames and Tables"
 author: "Lasanthi Watagoda"
 date: Jan 18, 2018
 output: html_document
@@ -56,6 +56,7 @@ knitr::kable(Res)
 DT::datatable(Res)
 ```
 
+<!--
 ## Testing Hypotheses
 
 $H_0: \textrm{The average height of males is the no different than the average height of females.}$
@@ -132,6 +133,7 @@ The $P(t_{\nu} = t_{`r nu`} \ge `r ts`) = `r pvalue`.$
 t.test(HeightIn ~ Sex, data = DF, alternative = "less")
 ```
 
+
 ## Permutation/Randomization Testing
 
 ```{r}
@@ -173,3 +175,5 @@ ggplot(data = data.frame(x = BSD), aes(x = x)) +
   labs(x = substitute(paste(bar(x)[1],"*", -bar(x)[2],"*")), title = "Bootstrap Distribution")
 quantile(BSD, probs = c(0.05, 0.95))
 ```
+
+-->
