@@ -49,7 +49,9 @@ Res
 ## Showing Tables
 
 ```{r}
-knitr::kable(Res)
+library(knitr)
+kable(Res)
+# knitr::kable(Res) # another way to call a function from a library
 ```
 
 ```{r}

@@ -90,6 +90,14 @@ facet_wrap(~calculus)
 ```
 
 
+```{r echo=FALSE}
+ggplot(data = CALCULUS, aes(y = score)) + 
+  geom_boxplot(color = "red", fill = "steelblue")
+??geom_boxplot
+  
+```
+
+
 # Testing Hypothesis.
 
 Assume $\sigma_X = 5$ and $\sigma_Y=12$.

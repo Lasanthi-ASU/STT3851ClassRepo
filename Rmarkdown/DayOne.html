@@ -246,7 +246,8 @@ Res</code></pre>
 </div>
 <div id="showing-tables" class="section level2">
 <h2>Showing Tables</h2>
-<pre class="r"><code>knitr::kable(Res)</code></pre>
+<pre class="r"><code>library(knitr)
+kable(Res)</code></pre>
 <table>
 <thead>
 <tr class="header">
@@ -271,9 +272,10 @@ Res</code></pre>
 </tr>
 </tbody>
 </table>
+<pre class="r"><code># knitr::kable(Res) # another way to call a function from a library</code></pre>
 <pre class="r"><code>DT::datatable(Res)</code></pre>
-<div id="htmlwidget-9cb8861cd5d9fd62bbd1" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9cb8861cd5d9fd62bbd1">{"x":{"filter":"none","data":[["1","2"],["Female","Male"],[66.4,71],[3.36154726279432,1.4142135623731],[5,5]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Sex<\/th>\n      <th>MH<\/th>\n      <th>SH<\/th>\n      <th>n<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-07a110a0f6e95c5fa90b" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-07a110a0f6e95c5fa90b">{"x":{"filter":"none","data":[["1","2"],["Female","Male"],[66.4,71],[3.36154726279432,1.4142135623731],[5,5]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Sex<\/th>\n      <th>MH<\/th>\n      <th>SH<\/th>\n      <th>n<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 <!--
 ## Testing Hypotheses
 
