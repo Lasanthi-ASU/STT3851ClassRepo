@@ -60,7 +60,7 @@ output:
 <!-- * [Schistosomiasis](../Rmarkdown/Schistosomiasis.html) -->
 
 
-* In class **quiz 02**
+
 
 **Jan 29:**
 
@@ -69,8 +69,8 @@ output:
     + Watch [Opening Remarks and Examples](https://www.youtube.com/watch?v=2wLfFB_6SKI) (18:18)
     + Watch [Supervised and Unsupervised Learning](https://www.youtube.com/watch?v=LvaTokhYnDw) (12:12)
     + Read Section 3.4 of [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)
-* Lecture - [Rmarkdown example](../Rmarkdown/FlowControl.html)
-
+* Lecture - ISLR Chapter 01
+* In class **quiz 02**
 <!--* Bootstrap - [Rmarkdown example](../Rmarkdown/TheBootstrap.html)-->
 <!--* [Overplotting Examples and possible Solutions](../Rmarkdown/HousingData.html)-->
 
@@ -85,7 +85,7 @@ output:
     + Watch [Assessing Model Accuracy and Bias-Variance Trade-off](https://www.youtube.com/watch?v=VusKAosxxyk) (10:04)
 <!--* Lecture - Bias Variance Tradeoff - Take notes-->
 * Lecture - Chapter 02 - Take Notes
-* In class **quiz 03**
+
 
 **Feb 5:**
 
@@ -95,7 +95,7 @@ output:
     + Watch [Lab: Introduction to R](https://www.youtube.com/watch?v=jwBgGS_4RQA) (14:12)
 <!--* Lecture - Bias Variance Tradeoff - Take notes - [Slides](../Rmarkdown/BiasVarDer.pdf) -->
 * Lecture - Chapter 02 - Take Notes
-
+* In class **quiz 03**
 <!--* Reproduce [Modified Introduction to R by Dr. Arnholt](https://stat-ata-asu.github.io/STT5812CourseRepo/Rmarkdown/RmarkdownAssignment.html).  -->
 
 <!--Submit your html file to [CrowdGrader](	https://www.crowdgrader.org/crowdgrader/venues/view_venue/2743) no later than 5 pm Feb 09.-->
