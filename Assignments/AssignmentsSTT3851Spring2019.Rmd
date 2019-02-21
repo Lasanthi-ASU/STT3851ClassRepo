@@ -164,6 +164,7 @@ output:
     + Watch [Lab: Linear Regression](https://www.youtube.com/watch?v=5ONFqIk3RFg) (22:10)
 * Lecture - Chapter 03  - Take Notes
 
+* [Download this `textbooks.bib` file](../Rmarkdown/Fall2019/textbooks.bib)
 
 **Feb 26:**
 
