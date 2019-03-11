@@ -6,6 +6,7 @@ output:
   bookdown::html_document2: 
     highlight: textmate
     theme: yeti
+    toc: true
     css: "../CSS/style.css"
 ---
 
@@ -181,15 +182,17 @@ output:
 
 **Feb 28:**
 
+* Lecture - Chapter 03  - Take Notes
 
-* Exam 1
 
 
 **~~Mar 04 - Mar 08:~~ ** **No Class - Spring Break**
 
 **Mar 12:**
 
-* [Directions for the complete project 1](../Rmarkdown/DirectionsMHP2018.html). Project Due Thursday the 15th before 5pm.
+* In class **quiz 06**
+
+* [Directions for the complete project 1](../Rmarkdown/DirectionsMHP2018.html). Project Due Thursday the 28th before 5pm.
 * Lecture - Chapter 03  - Take Notes
 <!--* [Work on Project 1](../Rmarkdown/DirectionsMHP.html)-->
 <!--* [Code for class notes](../Rmarkdown/BodyTemperatures.html)-->
@@ -199,11 +202,13 @@ output:
 
 * Lecture - Chapter 03 - Take Notes
 * [Chapter 3 Applied Problems](../3-15-18/ch3_applied.pdf)
-* In class **quiz 06**
+
 
 
 
 **Mar 19:**
+
+* Exam 1
 
 ```{block, startProject1, type='rmdoptional'}
 
@@ -215,29 +220,29 @@ output:
 * Submit your html file to github **Project 01** folder, no later than 5 pm Mar 28.
 ```
 
+
+**Mar 21:**
+
 * Before class:
     + Read chapter 5 [ISLR](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf)
     + Watch [Estimating Prediction Error and Validation Set Approach](https://www.youtube.com/watch?v=_2ij6eaaSl0) (14:01)
     + Watch [K-fold Cross-Validation](https://www.youtube.com/watch?v=nZAM5OXrktY) (13:33)
     + Watch [Cross-Validation: The Right and Wrong Ways](https://www.youtube.com/watch?v=S06JpVoNaA0) (10:07)
+    
+    + Watch [Lab: Cross-Validation](https://www.youtube.com/watch?v=6dSXlqHAoMk) (11:21)
+
 
 * Lecture - Chapter 05 - Take Notes
 
 <!-- * Start Project #1. Commit your final changes for Project 1 to your private repository and email the instructor your SHA prior to 10am April 05, 2018.  Use the subject line "Project 1-STT3851-Last_name First_name-SHA#" in your email. -->
 
 
-**Mar 21:**
 
-* Before class:
-    + Read/re-read chapter 5 [ISLR](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf)
-    + Watch [Lab: Cross-Validation](https://www.youtube.com/watch?v=6dSXlqHAoMk) (11:21)
 
-* Lecture - Chapter 05 - Take Notes
-
-* In class **quiz 07**
 
 **Mar 26:**
 
+* In class **quiz 07**
 
 * Lecture - Chapter 06 - Take Notes
 
@@ -251,7 +256,7 @@ output:
 
 * Complete [Reproduce _Lab: Cross-Validation_](../Rmarkdown/LabCrossValidation.html).  Submit your html file  no later than 5 pm April 05th.
 
-* In class **quiz 08**
+
 
 
 
@@ -265,6 +270,7 @@ output:
 
 
 * Lecture - Chapter 06 - Take Notes
+* In class **quiz 08**
 
 <!--* Start Project 2 
 * [Example Template Directory](https://github.com/STAT-ATA-ASU/STT3851Spring2016/blob/gh-pages/BDbetaTemplate)
@@ -292,7 +298,7 @@ output:
 
 * Lecture - Chapter 06 - Take Notes
 
-* In class **quiz 09**
+
 
 **Apr 9:**
 
@@ -305,7 +311,7 @@ output:
 
 * Lecture - Chapter 06 - Take Notes
 
-
+* In class **quiz 09**
 
 
 **Apr 11:**
