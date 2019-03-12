@@ -176,7 +176,7 @@ output:
 
 * Start: Reproduce [Lab: Linear Regression](../Rmarkdown/LabChap3.html).  
 
-* Submit your html file to github **Lab 2** folder, no later than 5 pm Mar 14.
+* Submit your html file to github **Lab 2** folder, no later than 5 pm Mar 17.
 
 ```
 
@@ -208,7 +208,7 @@ output:
 
 **Mar 19:**
 
-* Exam 1
+
 
 ```{block, startProject1, type='rmdoptional'}
 
@@ -222,6 +222,17 @@ output:
 
 
 **Mar 21:**
+
+* Exam 1
+
+
+
+
+
+
+**Mar 26:**
+
+* In class **quiz 07**
 
 * Before class:
     + Read chapter 5 [ISLR](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf)
@@ -238,13 +249,6 @@ output:
 
 
 
-
-
-**Mar 26:**
-
-* In class **quiz 07**
-
-* Lecture - Chapter 06 - Take Notes
 
 
 **Mar 28:**
