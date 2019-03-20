@@ -225,11 +225,6 @@ output:
 
 * Exam 1
 
-
-
-
-
-
 **Mar 26:**
 
 * In class **quiz 07**
@@ -384,8 +379,8 @@ output:
 
 
 
-<!--* [data file 1](SMELTPOT.txt)
-* [data file 2](STREETVN.txt) -->
+* [data file 1](SMELTPOT.txt)
+* [data file 2](STREETVN.txt)
 
 #[Home Page](http://Lasanthi-ASU.github.io/STT3851ClassRepo/) - [Syllabus](https://lasanthi-asu.github.io/STT3851ClassRepo/Syllabus/STT3851Spring2017Syllabus.html) {-}  
 
