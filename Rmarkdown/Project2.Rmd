@@ -60,6 +60,8 @@ housedataT$yr_renovated <- ifelse(housedataT$yr_renovated == 0, housedataT$yr_bu
 housedataT$yr_built <- as.Date(ISOdate(housedataT$yr_built, 9, 1))  # Complete Year, Sept 1
 housedataT$yr_renovated <- as.Date(ISOdate(housedataT$yr_renovated, 9, 1))  # Last renovated Year, Sept 1
 housedataT <- housedataT[, -1]
+attach(housedataT)
+attach(housedata)
 ```
 
 ```{r , message = FALSE, warning = FALSE}
@@ -165,11 +167,13 @@ ggplot(data = housedata, mapping = aes(x = sqft_living, y = price)) + geom_point
 -->
 
 
-```{r}
+```{r include=FALSE}
 
 # creating a data frame excluding id,date,sqft_living15,sqft_lot15, lat,long,yr_built,yr_renovated,rate
 housedata1<- housedata[ ,c(2:7,9,12,13,17:20)]
+```
 
+```{r}
 # Correlation matric
 cor(housedata1)
 
@@ -228,7 +232,7 @@ model3 <- randomForest(price ~  bathrooms + sqft_above,
 
 Use a simple linear model to predict the price of a house with 2,500 $\text{ft}^2$.
 
-```{r}
+```{r include=FALSE}
 slm <- lm(price ~ sqft_living, data = housedata)
 summary(slm)
 predict(slm, newdata = data.frame(sqft_living = 2500))
@@ -243,24 +247,106 @@ p6 + geom_smooth(method = "lm") +
 
 `mod.zip` most basic model.
 
-```{r}
+```{r include=FALSE}
 mod.zip <- lm(price ~ 1, data = housedata)
 summary(mod.zip)
 ```
 
 `mod.all` all current features except `sqft_basement`.
 
-```{r}
+```{r include=FALSE}
 mod.all <- lm(price ~ . - sqft_basement, data = housedata)
 summary(mod.all)
 anova(mod.all)
 ```
 
+
+```{r include=FALSE}
+#Stepwise regression
+library(MASS)
+#dim(housedata)
+#stepAIC(lm(price ~. , data = housedata), direction = "both")
+#mod.stepwise <- lm(price ~ date + bedrooms + bathrooms + sqft_living + sqft_lot + 
+ #  floors + waterfront + view + condition + grade + sqft_above + 
+ #  yr_built + yr_renovated + zipcode + lat + long + sqft_living15 + 
+#sqft_lot15)
+#anova(mod.stepwise)
+```
+
+```{r include=FALSE}
+#Ridge Regression
+set.seed(1)
+train = sample(c(TRUE, FALSE), size = nrow(housedata), replace = TRUE)
+test <- (!train)
+library(glmnet)
+x <- model.matrix(price ~ ., data = housedata)[, -1] # Remove (Intercept) column
+str(x)
+dim(x[train,])
+dim(x[test,])
+y <- housedata$price
+grid <- 10^seq(10, -2, length = 100)
+ridge.mod <- glmnet(x[train,], y[train], alpha = 0, lambda = grid)
+
+
+cv.out <- cv.glmnet(x[train,], y[train], alpha = 0)
+plot(cv.out)
+
+
+bestlambda <- cv.out$lambda.min
+bestlambda
+
+ridge.pred <- predict(ridge.mod, s = bestlambda, newx = x[test, ])
+RE <- sqrt(mean((y[test] - ridge.pred)^2))  # RMSPE
+RE
+
+final.ridge <- glmnet(x, y, alpha = 0)
+predict(final.ridge, type = "coefficients", s = bestlambda)
+```
+
+
+
+```{r include=FALSE}
+#Lasso Regression
+set.seed(1)
+train = sample(c(TRUE, FALSE), size = nrow(housedata), replace = TRUE)
+test <- (!train)
+library(glmnet)
+x <- model.matrix(price ~ ., data = housedata)[, -1] # Remove (Intercept) column
+str(x)
+dim(x[train,])
+dim(x[test,])
+y <- housedata$price
+grid <- 10^seq(10, -2, length = 100)
+lasso.mod <- glmnet(x[train,], y[train], alpha = 1, lambda = grid)
+
+
+cv.out <- cv.glmnet(x[train,], y[train], alpha = 1)
+plot(cv.out)
+
+
+bestlambda <- cv.out$lambda.1se
+bestlambda
+
+lasso.pred <- predict(ridge.mod, s = bestlambda, newx = x[test, ])
+RE <- sqrt(mean((y[test] - ridge.pred)^2))  # RMSPE
+RE
+
+final.lasso <- glmnet(x, y, alpha = 1)
+predict(final.lasso, type = "coefficients", s = bestlambda)
+```
+
+
+```{r include=FALSE}
+housedataT
+```
+
+
+
 Your goal is to create a model with as small a test error as possible.  Note that the square root of the training RSS from model `mod.all` is $`r anova(mod.all)[19, 3]^.5`$.
 
 
 
-```{r, fig.width=10, fig.height = 10}
+```{r, fig.width=10, fig.height = 10, eval=FALSE}
 library(ggmap)
 KingMap <-
   get_map(
@@ -288,39 +374,41 @@ ggmap(KingMap) +
   labs(x = "longitute", y = "latitude")
 ```
 
+<!--
 ## Prediction
 
 * Submit a vector named (`Yourlastname_Yourfirstname`) with the predicted house prices for your model using the data frame `housedataT`.
 
 * Suppose your final model is `mod.all`.
 
-```{r}
-Doe_John <- predict(model2, newdata = housedataT)
-head(Yourlastname_Yourfirstname)
-```
 
 ```{r}
 Yourlastname_Yourfirstname <- predict(mod.all, newdata = housedataT)
 head(Yourlastname_Yourfirstname)
 ```
 
+```{r}
+#Doe_John <- predict(mod.stepwise, newdata = housedataT)
+#head(Doe_John)
+```
+
 * Use `write.csv()` to create the vector `Yourlastname_Yourfirstname.csv`
 
-```{r, eval = FALSE}
-write.csv(Doe_John, file = "Doe_John.csv")
-```
 
 ```{r, eval = FALSE}
 write.csv(Yourlastname_Yourfirstname, file = "Yourlastname_Yourfirstname.csv")
 ```
 
-* 
+```{r, eval = FALSE}
+#write.csv(Doe_John, file = "Doe_John.csv")
+```
 
-I will compute your $\sqrt{MSPE}$.
+* I will compute your $\sqrt{MSPE}$.
 
 ```{r}
 SMSPE <- sqrt(mean((head(Yourlastname_Yourfirstname) - c(310000, 650000, 233000, 580500, 535000, 605000))^2))
 SMSPE
 ```
 
+-->
 
