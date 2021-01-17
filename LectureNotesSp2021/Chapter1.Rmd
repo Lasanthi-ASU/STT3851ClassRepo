@@ -84,7 +84,7 @@ ggplot(data = Wage, aes(x=year, y=wage)) + geom_point(color= "orchid4") + geom_s
   v) Create a boxplot (shown here) for wage for each education level.
   
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
-ggplot(data = Wage, aes(x=year, y=wage, fill = education)) + geom_boxplot() + theme_bw()
+ggplot(data = Wage, aes(x=education, y=wage, fill = education)) + geom_boxplot() + theme_bw()
 ```
   
   
