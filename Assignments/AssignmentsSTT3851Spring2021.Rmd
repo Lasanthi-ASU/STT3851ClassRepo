@@ -18,6 +18,8 @@ output:
 * Become familiar with the Appstate [RStudio server](https://mathr.math.appstate.edu/). You will use your Appstate user name and password to log in to the server.  You must be registered in the class to access the server.
 * [Chapter 1 - Introduction to Statistical Learning](../LectureNotesSp2021/Chapter1.html) --- Take notes in Rmarkdown
 
+* [**Lecture Recordings**](https://appstate.zoom.us/rec/share/TubZpEsgB2_XEgW7lMm-CrGfhLW3qd38Lm-0aSDJxe5TsGZpb03sy6LiVxXMcFQE.u4WtYhrRbq8gLeeQ)
+
 ***
 
 <!--
@@ -46,6 +48,8 @@ output:
 * [Chapter 1 - Introduction to Statistical Learning](../LectureNotesSp2021/Chapter1.html) --- Take notes in Rmarkdown
 
 * In class **quiz 01**
+
+
 
 ***
 
