@@ -47,7 +47,7 @@ output:
   
 * [Chapter 1 - Introduction to Statistical Learning](../LectureNotesSp2021/Chapter1.html) --- Take notes in Rmarkdown
 
-* In class **quiz 01**
+
 
 
 
@@ -84,7 +84,7 @@ output:
     
 * [Chapter 2 - Statistical Learning](../LectureNotesSp2021/Chapter2.html) --- Take notes in Rmarkdown
 * Continue to work on [Chapter 02 Lab]() 
-* In class **quiz 02**
+* In class **quiz 01**
 
 ***
 
