@@ -172,7 +172,9 @@ Consider modeling the brand of a product that a customer might purchase based on
 variables such as price, store location, discount levels, competition price,
 and so forth. In this situation one might really be most interested in how
 each of the individual variables affects the probability of purchase. For
-instance, what effect will changing the price of a product have on sales? Is this a prediction problem or an inference problem?
+instance, what effect will changing the price of a product have on sales? 
+  
+  a) Is this a prediction problem or an inference problem?
 
 ```
 
