@@ -175,6 +175,8 @@ each of the individual variables affects the probability of purchase. For
 instance, what effect will changing the price of a product have on sales? 
   
   a) Is this a prediction problem or an inference problem?
+  
+  b) Explain why.
 
 ```
 
