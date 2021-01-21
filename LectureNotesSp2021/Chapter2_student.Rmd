@@ -22,8 +22,7 @@ library(ISLR)
 Statistical learning is the use of past data to find how a variable depends on other variables, or how data can be summarized or represented. 
 
 For example, an insurance company may want to estimate the claim costs (_________) for an insured
-based on various features (_________) of the insured-age, sex, income, credit rating, past claim experience, and other similar features. If ____ is claim costs and ____ are the various features, we would like to find the function ___ for which
-
+based on various features (_________) of the insured-age, sex, income, credit rating, past claim experience, and other similar features. If ____ is claim costs and ____ are the various features, we would like to find the function ____ for which
 
 &nbsp;
 
@@ -74,7 +73,8 @@ to predict sales on the basis of the three media budgets.
 
 ## Why estimate $f$?
 
-There are two main reasons that we may wish to estimate f: 
+There are two main reasons that we may wish to estimate f: prediction
+and inference.
 
   1) 
   
