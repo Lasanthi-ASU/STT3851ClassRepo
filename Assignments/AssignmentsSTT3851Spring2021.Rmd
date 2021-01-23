@@ -20,6 +20,7 @@ output:
 
 * [**Lecture Recordings**](https://appstate.zoom.us/rec/share/TubZpEsgB2_XEgW7lMm-CrGfhLW3qd38Lm-0aSDJxe5TsGZpb03sy6LiVxXMcFQE.u4WtYhrRbq8gLeeQ)
 
+
 ***
 
 <!--
@@ -47,7 +48,7 @@ output:
   
 * [Chapter 1 - Introduction to Statistical Learning](../LectureNotesSp2021/Chapter1.html) --- Take notes in Rmarkdown
 
-
+* [**Lecture Recordings**](https://appstate.zoom.us/rec/share/mdNgULvakbQHepiCYE7ilNqUhzmfRAHE5Ba9dFZUIcY0AaqzipH1vX1lPdqgzZfy.Try1DYm6otXhZliA)
 
 
 
