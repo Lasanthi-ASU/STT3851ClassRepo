@@ -182,3 +182,132 @@ instance, what effect will changing the price of a product have on sales?
 
 ## How Do We Estimate $f$?
 
+There are many linear and non-linear approaches for estimating $f$. Here we only discuss an overview of linear approaches.
+
+  * We will always assume that we have observed a set of $n$ different
+data points.
+  * These observations are called the _________ because we will use these 
+observations to train, or teach, our method how to estimate $f$.
+  * Let __ represent the value of the ___ predictor, or input, for observation __, where
+$i = 1, 2,...,n$ and $j = 1, 2,...,p$.
+  * Let __ represent the response variable for the __ observation.
+  
+
+Example:
+  
+Consider the Wage data set.
+
+  1) What is $n$?
+  2) How many predicors are there?
+  3) What is $x_{2,5}$
+
+
+```{r include=FALSE}
+data(Wage)
+head(Wage)
+dim(Wage)
+```
+
+
+Our goal is to apply a statistical learning method to the training data
+in order to estimate the unknown function $f$. In other words, we want to
+find a function $\hat{f}$ such that $Y \approx \hat{f}(X)$ for any observation $(X, Y )$. Broadly
+speaking, most statistical learning methods for this task can be characterized as either 
+
+  * parametric or 
+  * non-parametric. 
+
+### Parametric Methods
+
+Parametric methods involve a two-step model-based approach.
+
+  1) First, we visually inspect the functional form, or shape,
+of $f$. For example, one very simple functional form is that $f$ is linear in
+$X$:
+
+&nbsp;
+
+  2) After a model has been selected, we need a procedure that uses the
+training data to fit or train the model. In the case of the linear model, we need to estimate the parameters ______________ That is, we want to find values of these parameters such that
+
+&nbsp;
+
+The most common approach to fitting the model is referred to as _______________.
+
+The model-based approach just described is referred to as parametric; it reduces the problem of estimating $f$ down to one of estimating a set of parameters ________________.
+
+#### flexibility and overfitting
+
+  *  The model we choose will usually not match the true
+unknown form of $f$.
+  *  If the chosen model is too far from the true $f$, then
+our estimate will be poor.
+  *  We can try to address this problem by choosing flexible models that can fit many different possible functional forms flexible for $f$.
+  * But in general, fitting a more flexible model requires estimating a
+greater number of parameters.
+  * These more complex models can lead to a phenomenon known as overfitting the data.
+  
+  Example: 
+  
+  ![Linear (less flexible) model](linear.png)
+  
+   ![ a more flexible model](flexible.png)
+
+
+### Non-parametric Methods
+
+Non-parametric methods do not make explicit assumptions about the functional form of f. Instead they seek an estimate of f that gets as close to the data points as possible without being too rough or wiggly. 
+
+  **Advantage**: By avoiding the assumption of a particular functional form for $f$, they have the potential to accurately fit a wider range of possible shapes for $f$.
+  
+  **Disadvantage**: since they do not reduce the problem of estimating f to a small number of parameters, a very large number of observations (far more than is typically needed for a parametric approach) is required in order to obtain an accurate estimate for $f$.
+
+
+
+##  The Trade-Off Between Prediction Accuracy and Model Interpretability
+
+
+   ![A representation of the tradeoff between flexibility and interpretability, using different statistical learning methods. In general, as the flexibility of a method increases, its interpretability decreases.](flexInter.png)
+
+*why would we ever choose to use a more restrictive method instead of a very flexible approach?* If we are mainly interested in __________, then restrictive models are much more interpretable. For instance, when inference is the goal, the linear model may be a good choice since it will be quite easy to understand the relationship between $Y$ and $X_1, X_2,...,X_p$. For example Least
+squares linear regression is relatively inflexible but is quite interpretable (Ch 3). 
+
+In some settings, however, we are only interested in __________, and the interpretability of the predictive model is simply not of interest.  In this setting, we might expect that it
+will be best to use the most flexible model available. Surprisingly, this is not always the case! We will often obtain more accurate predictions using a less flexible method. 
+
+Finally, fully non-linear methods such as __________, __________, and __________, are highly flexible approaches that are harder to interpret.
+
+
+## Supervised Versus Unsupervised Learning
+
+
+| Supervised Learning          | Unsupervised Learning    |
+| -----------------------------|-------------------------:|
+| There is an associated response measurement $y_i$. | There is NO associated response measurement $y_i$. |
+| Fit a model that relates the response to the predictors with the aim of accurately predicting the response for future observations (prediction) or better understanding the relationship between the response and the predictors (inference). | Understand the relationships between the variables or between the observations. |
+| Examples: linear regression, logistic regression, GAM, boosting, and support vector machines |  One statistical learning tool that we may use in this setting is cluster analysis, or clustering. |
+
+
+## Regression Versus Classification Problems
+
+Recall: Variables can be characterized as either ____________ or _____________ (also  known as ___________). 
+
+___________ variables take on ___________ values. Examples: 
+
+In contrast, qualitative variables take on values in one of $K$ different classes, or categories. Examples: 
+
+
+
+| Regression Problems          | Classification Problems  |
+| -----------------------------|-------------------------:|
+| Problems with a quantitative response ($y$) | Problems with a qualitative response ($y$) |
+| Example: . Least squares linear regression is used with a quantitative response | Example:  Logistic regression is typically used with a qualitative (two-class, or binary) response. |
+
+Note: $K$-nearest neighbors and boosting, can be used in the case of either quantitative or qualitative responses. We tend to select statistical learning methods on the basis of whether the _________ is quantitative or qualitative; i.e. we might use linear regression when quantitative and logistic regression when qualitative. However, whether the __________ are qualitative or quantitative is generally considered less important.
+
+
+
+
+
+
+
