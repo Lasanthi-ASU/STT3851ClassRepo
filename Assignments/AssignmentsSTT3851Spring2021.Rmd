@@ -61,7 +61,9 @@ output:
     + Watch [Statistical Learning and Regression](https://www.youtube.com/watch?v=WjyuiK5taS8) (11:41)
 
 * [Chapter 2 - Statistical Learning](../LectureNotesSp2021/Chapter2.html) --- Take notes in Rmarkdown
-* Start [Chapter 02 Lab]() today
+
+* [**Lecture Recordings**](https://appstate.zoom.us/rec/share/Cn4tP75My8UjMm9emXMc1pmKtw00ctdTxJIr3ZhEckKSwSByc_REMsnSJ5edYJZy.dj7DMPzdgnJ3UXHF)
+
 
 ***
 <!--
@@ -84,8 +86,9 @@ output:
     + Watch [Curse of Dimensionality and Parametric Models](https://www.youtube.com/watch?v=UvxHOkYQl8g) (11:40)
     
 * [Chapter 2 - Statistical Learning](../LectureNotesSp2021/Chapter2.html) --- Take notes in Rmarkdown
-* Continue to work on [Chapter 02 Lab]() 
+
 * In class **quiz 01**
+* Start [Chapter 02 Lab]() today
 
 ***
 
