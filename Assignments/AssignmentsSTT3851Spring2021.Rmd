@@ -90,6 +90,8 @@ output:
 * In class **quiz 01**
 * Start [Chapter 02 Lab]() today
 
+* [**Lecture Recordings**](https://appstate.zoom.us/rec/share/ll_gcPVyBDhO6UKYKViHdKTZqwNltT-XIBxF30CBc0OjSzU5Dv-kmo0RX1cBk-V2.fu9mEyvu90MjOOuU)
+
 ***
 
 <!--
