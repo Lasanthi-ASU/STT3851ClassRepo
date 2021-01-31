@@ -393,6 +393,8 @@ output:
 
 -->
 
+* [data file 1](Auto.txt)
+
 # [Home Page](http://Lasanthi-ASU.github.io/STT3851ClassRepo/) - [Syllabus](https://lasanthi-asu.github.io/STT3851ClassRepo/Syllabus/STT3851Spring2021Syllabus.html) {-}  
 
 
