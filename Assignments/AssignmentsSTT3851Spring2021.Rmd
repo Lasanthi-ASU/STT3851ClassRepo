@@ -88,7 +88,8 @@ output:
 * [Chapter 2 - Statistical Learning](../LectureNotesSp2021/Chapter2.html) --- Take notes in Rmarkdown
 
 * In class **quiz 01**
-* Start [Chapter 02 Lab]() today
+
+* Start [Chapter 02 Lab](../Labs/LabChap2.html) today
 
 * [**Lecture Recordings**](https://appstate.zoom.us/rec/share/ll_gcPVyBDhO6UKYKViHdKTZqwNltT-XIBxF30CBc0OjSzU5Dv-kmo0RX1cBk-V2.fu9mEyvu90MjOOuU)
 
@@ -393,7 +394,8 @@ output:
 
 -->
 
-* [data file 1](Auto.txt)
+* [Auto Data .txt](Auto.txt)
+* [Auto Data .csv](Auto.csv)
 
 # [Home Page](http://Lasanthi-ASU.github.io/STT3851ClassRepo/) - [Syllabus](https://lasanthi-asu.github.io/STT3851ClassRepo/Syllabus/STT3851Spring2021Syllabus.html) {-}  
 
