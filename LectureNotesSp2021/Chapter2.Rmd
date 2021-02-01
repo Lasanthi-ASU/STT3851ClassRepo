@@ -300,10 +300,127 @@ In contrast, qualitative variables take on values in one of $K$ different classe
 
 | Regression Problems          | Classification Problems  |
 | -----------------------------|-------------------------:|
-| Problems with a quantitative response ($y$) | Problems with a qualitative response ($y$) |
-| Example: . Least squares linear regression is used with a quantitative response | Example:  Logistic regression is typically used with a qualitative (two-class, or binary) response. |
+| Problems with a ___________ response ($y$) | Problems with a ___________ response ($y$) |
+| Example: ___________ linear regression is used with a quantitative response | Example:  ___________ regression is typically used with a qualitative (two-class, or binary) response. |
 
 Note: $K$-nearest neighbors and boosting, can be used in the case of either quantitative or qualitative responses. We tend to select statistical learning methods on the basis of whether the _________ is quantitative or qualitative; i.e. we might use linear regression when quantitative and logistic regression when qualitative. However, whether the __________ are qualitative or quantitative is generally considered less important.
+
+
+
+## Assessing Model Accuracy
+
+**Question:** Why is it necessary to introduce so many different statistical learning approaches, rather than just a single best method?
+
+**Answer:** 
+&nbsp;
+
+Selecting the ______________ can be one of the most challenging parts of performing statistical learning in practice.
+
+
+### Measuring the Quality of Fit
+
+In order to evaluate the performance of a statistical learning method on
+a given data set, we need some way to measure how well its ______________
+actually _______ the ______________. In the regression setting, the most commonly-used measure is the ______________ (MSE), given by
+
+$$MSE = \sum_{i=1}^{n} $$
+
+&nbsp;
+
+
+where $\hat{f}(x_i)$ is the prediction that $\hat{f}$ gives for the $i^{th}$ observation. $y_i$ is the $i^{th}$ observed value.
+
+  * The MSE will be _______ if the predicted responses are very close to the true responses
+  * The MSE will be _______ if the predicted and true responses differ substantially.
+  * The MSE here is computed using the _______ data that was used to fit the model and so should more accurately be referred to as the training MSE.
+  * But in general, we do not really care how well the method works on the _______ data. Rather, we are interested in the accuracy of the predictions that we obtain when we apply our method to previously _______ _______ data.
+  
+*Let's look at the last point above mathematically:*
+
+suppose that we fit our statistical learning method on our training observations
+
+&nbsp;
+
+and we obtain the estimate _______
+
+We can then compute
+
+&nbsp;
+
+If these are approximately equal to 
+
+&nbsp;
+
+then the training MSE is _______.
+
+However, we are really not interested in whether _______; instead, we want to know whether _______ is approximately equal to _______, where (____, ____) is a previously unseen test observation not used to train the statistical learning method.
+
+We want to choose the method that gives the ______________, as opposed to the lowest ______________. In other words, if we had a large number of _______ observations, we could compute
+
+&nbsp;
+
+the average squared prediction error for these test observations $(x_0, y_0)$.
+
+
+*How can we go about trying to select a method that minimizes the test MSE?*  In some settings, we may have a test ______________ that is,
+we may have access to a set of observations that were ______________ to train
+the statistical learning method. We can then simply evaluate MSE on the
+test observations, and select the learning method for which the test MSE is ______________.
+
+*But what if no test observations are available?* In that case, one
+might imagine simply selecting a statistical learning method that minimizes
+the training MSE.
+
+
+
+
+### Undestanding training and test MSEs
+
+![](2_9.png)
+This figure illustrates a phenomenon on a simple example. 
+
+**In the left hand panel:**
+
+  * We have generated observations with the true $f$ given by the black curve. 
+
+  * The orange, blue and green curves illustrate three possible ___________ obtained using methods with increasing levels of ___________. 
+  
+  * The orange line is the ______________________, which is relatively ___________. 
+  
+  * The blue and green curves were produced using smoothing splines (a more complex model) with different levels of smoothness.
+  
+  * The level of ___________ ___________ as the curves fit the observed data more ___________.  
+
+**On to the right-hand panel:**
+
+  * The *grey* curve displays the average ___________ ______ as a function of ___________
+  
+  * The orange, blue and green squares indicate the MSEs associated with the corresponding curves in the left hand panel.
+  
+  * The ___________ MSE ___________ monotonically as ___________ increases.
+  
+  * The test MSE is displayed using the red curve in the right-hand panel.
+  
+  * As with the training MSE, the ___________ MSE initially ___________ as the level of ___________ increases.
+  
+  * However, at some point the test MSE levels off and then starts to increase again.
+
+In summary, as the flexibility of the statistical learning method increases, we observe a monotone decrease in the training MSE and a U-shape in the test MSE. This is a fundamental property of statistical learning that holds regardless of the particular data set at hand
+and regardless of the statistical method being used.
+
+  * When a given method yields a small ___________ MSE but a large ___________ MSE, we are
+said to be ___________ the data.
+
+  * Note that regardless of whether or not overfitting has occurred, we almost always expect the training MSE to be smaller than the test MSE.
+  
+  
+
+### The Bias-Variance Trade-Off
+
+
+
+
+
 
 
 
