@@ -107,6 +107,8 @@ output:
 
 * Start [Chapter 02 Lab](../Labs/LabChap2.html) today
 
+* [**Lecture Recordings**](https://appstate.zoom.us/rec/share/Vmv4GKpLtlyObWV17IN09wgmMmcE8_o6eYFajPRSvSULUOlaH02Vgz52sgJmxcDe.Muhkr-7se8H-j6Ur)
+
 ***
 
 **Feb 04:**
