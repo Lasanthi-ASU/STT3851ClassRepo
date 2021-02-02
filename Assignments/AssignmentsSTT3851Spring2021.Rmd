@@ -89,25 +89,29 @@ output:
 
 * In class **quiz 01**
 
-* Start [Chapter 02 Lab](../Labs/LabChap2.html) today
+
 
 * [**Lecture Recordings**](https://appstate.zoom.us/rec/share/ll_gcPVyBDhO6UKYKViHdKTZqwNltT-XIBxF30CBc0OjSzU5Dv-kmo0RX1cBk-V2.fu9mEyvu90MjOOuU)
 
 ***
 
-<!--
+
 
 
 **Feb 02:**
 
-* [Chapter 2 - Statistical Learning](../Rmarkdown/StatReview.html) --- Take notes in Rmarkdown
-* Continue to work on [Chapter 02 Lab]() 
+* Before class:
+    + Watch [Assessing Model Accuracy and Bias-Variance Trade-off](https://www.youtube.com/watch?v=VusKAosxxyk) (10:04)
 
+* [Chapter 2 - Statistical Learning](../Rmarkdown/StatReview.html) --- Take notes in Rmarkdown
+
+* Start [Chapter 02 Lab](../Labs/LabChap2.html) today
+
+***
 
 **Feb 04:**
 
-* Before class:
-    + Watch [Assessing Model Accuracy and Bias-Variance Trade-off](https://www.youtube.com/watch?v=VusKAosxxyk) (10:04)
+
 
 * [Chapter 2 - Statistical Learning](../Rmarkdown/StatReview.html) --- Take notes in Rmarkdown
 * Continue to work on [Chapter 02 Lab]() 
@@ -122,7 +126,7 @@ output:
 **Feb 11:**
 
 
-
+<!--
 
 **Feb 12:**
 
