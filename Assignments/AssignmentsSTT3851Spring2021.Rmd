@@ -103,7 +103,7 @@ output:
 * Before class:
     + Watch [Assessing Model Accuracy and Bias-Variance Trade-off](https://www.youtube.com/watch?v=VusKAosxxyk) (10:04)
 
-* [Chapter 2 - Statistical Learning](../Rmarkdown/StatReview.html) --- Take notes in Rmarkdown
+* [Chapter 2 - Statistical Learning](../LectureNotesSp2021/Chapter2.html) --- Take notes in Rmarkdown
 
 * Start [Chapter 02 Lab](../Labs/LabChap2.html) today
 
@@ -113,10 +113,14 @@ output:
 
 
 
-* [Chapter 2 - Statistical Learning](../Rmarkdown/StatReview.html) --- Take notes in Rmarkdown
-* Continue to work on [Chapter 02 Lab]() 
-* In class **quiz 03**
+* [Chapter 2 - Statistical Learning](../LectureNotesSp2021/Chapter2.html) --- Take notes in Rmarkdown
 
+* Continue to work on [Chapter 02 Lab](../Labs/LabChap2.html) 
+
+* In class **quiz 02**
+
+***
+<!--
 **Feb 9:**
 
 * [Chapter 2 - Statistical Learning](../Rmarkdown/StatReview.html) --- Take notes in Rmarkdown
@@ -126,7 +130,7 @@ output:
 **Feb 11:**
 
 
-<!--
+
 
 **Feb 12:**
 
