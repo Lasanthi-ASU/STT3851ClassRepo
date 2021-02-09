@@ -132,6 +132,7 @@ output:
 * [Bias-Variance Trade-Off](https://lasanthi-asu.github.io/STT3851ClassRepo/LectureNotesSp2021/BiasVariance.html)
 * Continue to work on [Chapter 02 Lab](../Labs/LabChap2.html) 
 
+* [**Lecture Recordings**](https://appstate.zoom.us/rec/share/kC3Y2kJjSMho35N3lBrG8v5IHL65IylbKyy4p4Demr2wsyVShKH7v9jjb82xJ8ZI.9NwLOvTGNX06rtYE)
 
 ***
 
