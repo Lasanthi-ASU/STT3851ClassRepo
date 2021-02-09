@@ -475,10 +475,60 @@ impact on the ___________ but starts to significantly increase the ___________.
 Example: [Bias variance trade off demonstration](BiasVariance.html). 
 
 
+## The Classification Setting
+
+Now our $y$ is ___________.
+
+Suppose that we seek to estimate $f$ on the basis of training observations
+${(x_1, y_1), . . . , (x_n, y_n)}$, where now $y_1, . . . , y_n$ are ___________.
+
+The
+most common approach for quantifying the accuracy of our estimate $\hat{f}$ is
+the training error rate, the proportion of mistakes that are made if we apply our estimate $\hat{f}$  to the training observations:
+
+&nbsp;
 
 
+  * Here _____ is the predicted class label for the ith observation using _____.
+
+  * _____ is an indicator variable that equals __ if _____ and _____ if _______.
 
 
+  * If ___________ then the ith observation was classified ___________ by our
+classification method; otherwise it was ___________.
+
+  * Hence the above equation computes the fraction of incorrect classifications. This equation refer to as the ___________ because it is computed based on the data that was used to train our classifier.
+  
+  
+  * The ___________ error rate associated with a set of ___________ observations of the form $(x_0, y_0)$ is given by
+
+&nbsp;
+
+  * where ___ is the predicted class label that results from applying the classifier
+to the test observation with predictor $x_0$. A good classifier is one for which
+the test error is ___________.
+
+
+  
+### Classification methods
+
+#### K-Nearest Neighbors
+
+
+Example: 
+
+![](knnpic.png)
+
+
+  a) Let $K = 3$. Find the probability that red dot belongs to Class B (purple). That is find
+     $$P(Y = purple | X = x_o) = \frac{1}{K}\sum (Y = purple)$$
+  b) Let $K = 6$. Find the probability that red dot belongs to Class A (yellow).
+  
+
+In general given a positive integer $K$ and a test observation $x_0$, the KNN classifier first identifies the neighbors
+$K$ points in the training data that are closest to $x_0$, represented by $N_0$.
+It then estimates the conditional probability for class $j$ as the fraction of
+points in $N_0$ whose response values equal $j$:
 
 
 
