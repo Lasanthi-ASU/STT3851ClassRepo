@@ -125,19 +125,16 @@ output:
 
 
 ***
-<!--
+
 **Feb 9:**
 
-* [Chapter 2 - Statistical Learning](../Rmarkdown/StatReview.html) --- Take notes in Rmarkdown
-* [Chapter 02 Lab]() due
+* [Chapter 2 - Statistical Learning](../LectureNotesSp2021/Chapter2.html) --- Take notes in Rmarkdown
+* Continue to work on [Chapter 02 Lab](../Labs/LabChap2.html) 
 
 
 **Feb 11:**
 
 
-
-
-**Feb 12:**
 
 * Before class:
     + Refer to [_bookdown: Authoring Books and Technical Documents with R Markdown_](https://bookdown.org/yihui/bookdown/) as needed
@@ -146,6 +143,8 @@ output:
 * [Chapter 02 Lab](../Rmarkdown/Fall2019/Chapter_2_Lab.html)
 * In class **quiz 04**
 
+
+<!--
 **Feb 14:**
 
 * Chapter 02 Lab

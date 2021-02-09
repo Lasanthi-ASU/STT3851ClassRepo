@@ -448,9 +448,31 @@ method?*
     
   * On the other hand, bias refers to the error that is introduced by approximating a real-life problem, which may be extremely complicated, by a much simpler model. For example, linear regression assumes that there is a linear relationship between $Y$ and $X_1,X_2, . . . , X_p$. It is unlikely that any real-life problem truly has such a simple linear relationship, and so performing linear regression will undoubtedly result in some bias in the estimate of $f$. In other words, linear regression results in ___________.
     
+
+Let's try to visualize the bias and the variance a little bit more... 
+  
+  ![](2_12.png)
+  
+
   * As a general rule, as we use ___________ methods, the variance will ___________ and the bias will ___________.
     
+  * The relative rate of change of these two quantities (____ and _____) determines whether the ___________ increases or decreases.
+  
+  * As we increase the flexibility of a class of methods, the bias tends to initially decrease faster than the variance increases.
+  
+  * Consequently, the expected test MSE ___________.
+  
+  * However, at some point increasing flexibility has ___________
+impact on the ___________ but starts to significantly increase the ___________.
 
+  * When this happens the test MSE ___________.
+  
+  * In the graph above, the horizontal dashed line represents $Var(\epsilon)$, the irreducible error. Finally, the red curve, corresponding to the test set MSE, is the sum of these three quantities.
+  
+  * The relationship between bias, variance, and test set MSE given in the Equation above and displayed in Figure is referred to as the ___________.
+  
+  
+Example: [Bias variance trade off demonstration](BiasVariance.html). 
 
 
 
