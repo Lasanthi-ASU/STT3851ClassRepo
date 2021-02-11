@@ -145,6 +145,8 @@ output:
 * [Chapter 02 Lab](../Labs/LabChap2.html) Due Sunday.
 * In class **quiz 03**
 
+* [**Lecture Recordings**](https://appstate.zoom.us/rec/share/RU-cKQYo27N_7ckALqeYICzXlFth6yilkBq99N2-MvKq3zXNdbp4Poi04PXehEo.wx3avop7NdR60wZP)
+
 
 <!--
 **Feb 14:**
