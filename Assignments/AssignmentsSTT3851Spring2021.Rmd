@@ -142,16 +142,15 @@ output:
 * Before class:
     + Refer to [_bookdown: Authoring Books and Technical Documents with R Markdown_](https://bookdown.org/yihui/bookdown/) as needed
 
-* [K-Nearest Neighbors Algorithm]()
 * [Chapter 02 Lab](../Labs/LabChap2.html) Due Sunday.
-* In class **quiz 04**
+* In class **quiz 03**
 
 
 <!--
 **Feb 14:**
 
 * Chapter 02 Lab
-
+* [K-Nearest Neighbors Algorithm]()
 
 
 
