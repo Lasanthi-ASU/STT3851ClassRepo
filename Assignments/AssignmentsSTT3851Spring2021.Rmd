@@ -147,27 +147,35 @@ output:
 
 * [**Lecture Recordings**](https://appstate.zoom.us/rec/share/RU-cKQYo27N_7ckALqeYICzXlFth6yilkBq99N2-MvKq3zXNdbp4Poi04PXehEo.wx3avop7NdR60wZP)
 
+***
 
-<!--
-**Feb 14:**
-
-* Chapter 02 Lab
-* [K-Nearest Neighbors Algorithm]()
-
-
-
-**Feb 19:**
+**Feb 16:**
 
 * Before class:
     + Read pages 59-82 of [ISLR](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf)
     + Watch [Simple Linear Regression and Confidence Intervals](https://www.youtube.com/watch?v=PsE9UqoWtS4) (13:01)
+
+
+* [Chapter 3 - Linear Regression](../LectureNotesSp2021/Chapter3.html) --- Take notes in Rmarkdown
+
+***
+
+
+**Feb 18:**
+
+* Before class:
     + Watch [Hypothesis Testing ](https://www.youtube.com/watch?v=J6AdoiNUyWI) (8:24)
     + Watch [Multiple Linear Regression and Interpreting Regression Coefficients ](https://www.youtube.com/watch?v=1hbCJyM9ccs) (15:38)
 <!--* Discuss [Chapter 2 and 3 material](../Rmarkdown/Chap2Slides.html)
 
-* Lecture - Chapter 03 (3.1, 3.2)
+* [Chapter 3 - Linear Regression](../LectureNotesSp2021/Chapter3.html) --- Take notes in Rmarkdown
 
-* In class **quiz 05**
+
+* In class **quiz 04**
+
+***
+<!--
+
 ```{block, startLab1, type='rmdoptional'}
 **Lab 01**
 
@@ -176,7 +184,6 @@ output:
 * Submit your html file to github **Lab 1** folder, no later than 5 pm Feb 21.
 
 ```
-
 
 
 

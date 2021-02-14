@@ -1,0 +1,202 @@
+---
+title: Chapter 3 - Linear Regression
+author: Dr. Lasanthi Watagoda
+date: January 19, 2021
+output: rmdformats::readthedown
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+This chapter is about linear regression, a very simple approach for
+supervised learning. Linear regression is 
+a useful and widely used statistical learning method.
+
+We use linear regression for predicting a _____________ response. 
+
+
+# Simple Linear Regression
+
+A very straightforward approach for predicting a _____________ response $Y$ on the basis of a _____________.
+
+It assumes that there is approximately a linear
+relationship between $X$ and $Y$ . Mathematically, we can write this linear
+relationship as
+ 
+&nbsp;
+
+We will sometimes describe this relationship by saying that we are *regressing* $Y$ on $X$ (or $Y$ onto $X$).
+
+**Example 1:**
+
+Recall the Advertising data from Chapter 2. In this data, sales
+(in thousands of units) for a particular product and advertising
+budgets (in thousands of dollars) for TV, radio, and newspaper media are recorded.
+
+```{r}
+AdvertisingData <- read.csv("https://raw.githubusercontent.com/nguyen-toan/ISLR/master/dataset/Advertising.csv", header = TRUE, sep = ",")
+AdvertisingData <- AdvertisingData[,-1]
+head(AdvertisingData)
+```
+Let $X$ represents TV advertising and $Y$ represent sales. Write the model for regressing sales onto TV:
+
+&nbsp;
+
+
+  * ____ and _____ are two unknown constants that represent the ____ and ____ terms in the linear model.
+  
+  * Together, ____ and ____ are known as the model ____ or ____.
+  
+  * Once we have used our training data to produce estimates (how?) ____ and ____ for the model coefficients, we can predict future sales on the basis of a particular value of TV advertising by computing
+  
+  &nbsp;
+
+where ____indicates a prediction of $Y$ on the basis of $X = x$. Here we use a
+hat symbol, to denote the estimated value for an unknown parameter
+or coefficient, or to denote the predicted value of the response.
+  
+## Estimating the Coefficients
+
+Note: These scatter plots here are NOT the actual ones from Advertising data. 
+
+![](scatter.png)
+
+What is the line of best fit? _____________________
+
+![](regplot1.png)
+
+  * $y =$
+  * $\hat{y} =$
+  * $y - \hat{y} =$
+  
+We get the LS line (estimates for the model coefficients) by minimizing the sum of squares of residuals (RSS)
+
+  $$RSS = $$
+Note: How do we minimize RSS? Derivatives are used to minimize RSS (outside the scope of our class). 
+
+After minimizing RSS we get our estimates ____ and ____ for the model coefficients:
+
+&nbsp;
+
+
+The standard errors associated with $\hat{\beta_0}$ and $\hat{\beta_1}$
+
+&nbsp;
+
+In general, $\sigma^2$ is not known, but can be estimated from the data. The estimate of $\sigma$ is known as the __________, and is given by the formula
+
+&nbsp;
+
+
+**Example 2:**
+
+```{r include=FALSE}
+meanX <- mean(AdvertisingData$TV)
+meanY <- mean(AdvertisingData$Sales)
+r <- cor(AdvertisingData$TV, AdvertisingData$Sales)
+sdX <- sd(AdvertisingData$TV)
+sdY <- sd(AdvertisingData$Sales)
+r*sdY/sdX
+
+```
+
+  a) From Advertising data it is found that:
+
+  * The average cost for TV advertising is `r meanX`  
+  * The standard deviation of cost for TV advertising is `r sdX` 
+  * The average sales is `r meanY`  
+  * The standard deviation of sales `r sdY`
+  * Correlation coefficient between the cost for TV advertising and sales is `r r`
+
+Find the LS estimates for model coefficients ($\hat{\beta_0}$, $\hat{\beta_1}$) when regressing sales onto TV.
+
+&nbsp;
+
+  b) Use the `lm()` function to find the LS estimates for model coefficients ($\hat{\beta_0}$, $\hat{\beta_1}$) when regressing sales onto TV. Compare your answers with a) 
+  
+  &nbsp;
+  
+```{r include=FALSE}
+str(AdvertisingData)
+#head(AdvertisingData)
+AdvertisingModel <- lm(Sales ~ TV, data = AdvertisingData)
+summary(AdvertisingModel)
+```
+  
+  c) State your final simple linear regression model
+  
+  &nbsp;
+  
+## Interpreating regression coefficients
+
+
+  * $\hat{\beta_1}:$ The *average* **increase/decrease** in $Y$ for every **one unit** ***increase*** in $X$.
+  
+  * $\hat{\beta_0}:$ The *average* value of $Y$ when the value of $X = 0$. In most cases, we will find no meaning in $\hat{\beta_0}$.
+
+**Example 3:**
+In the advertising data, the sales are recorded in thousands of units and the  advertising costs are recorded in thousands of dollars. Interpret the model coefficient estimates you obtained in Example 2.
+
+&nbsp;
+
+## Confidence intervals for model coefficients $\beta_1$ and $\beta_0$
+
+A $100(1-\alpha)\%$ (example: 95%) confidence interval is defined as a range of values such that with $100(1-\alpha)\%$ (example: 95%) probability, the range will contain the true unknown value of the parameter.
+
+For linear regression, the 95% confidence interval for $\beta_1$ takes the form
+
+&nbsp;
+
+That is, there is approximately a 95% chance that the interval
+
+&nbsp;
+
+will contain the true value of β1.
+
+Here are some common values for $\beta_1$.
+
+| $100(1-α)\%$ | $90\%$ | $95\%$ |$99\%$ |
+| ----- | ----- | ------ | ------- | 
+| $z^∗$ | 1.645 | 1.96 | 2.576 |
+
+
+Similarly, a confidence interval for $\beta_0$ approximately takes the form
+
+
+&nbsp;
+
+
+**Example 4:**
+
+Table below provides details of the least squares model for the regression of
+number of units sold on `TV` advertising budget for the   `Advertising` data.
+
+| | Coefficient | Std. error | t-statistic | p-value |
+| ----- | ----- | ------ | ------- | ------- | 
+| `Intercept` | 7.0325 | 0.4578 | 15.36  | < 0.0001 |
+| `TV` | 0.0475 | 0.0027 | 17.67 | < 0.0001 |
+
+  a) Find a 90\% confidence interval for $\beta_0$
+&nbsp;
+  b) Find a 90\% confidence interval for $\beta_1$
+&nbsp;
+
+**Example 5:**
+Use R to find
+
+  a) Find a 90\% confidence interval for $\beta_0$
+
+  b) Find a 90\% confidence interval for $\beta_1$
+
+when regressing `Sales` onto `TV` in `Advertising` data.
+
+```{r include=FALSE}
+AdvertisingModel <- lm(Sales ~ TV, data = AdvertisingData)
+
+confint(AdvertisingModel, level = .9)
+```
+
+
+
