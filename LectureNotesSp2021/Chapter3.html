@@ -1624,6 +1624,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <li><a href="#estimating-the-coefficients">Estimating the Coefficients</a></li>
       <li><a href="#interpreating-regression-coefficients">Interpreating regression coefficients</a></li>
       <li><a href="#confidence-intervals-for-model-coefficients-beta_1-and-beta_0">Confidence intervals for model coefficients <span class="math inline">\(\beta_1\)</span> and <span class="math inline">\(\beta_0\)</span></a></li>
+      <li><a href="#hypothesis-testing-for-beta_0-and-beta_1">Hypothesis testing for <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span></a></li>
       </ul></li>
       </ul>
     </div>
@@ -1787,6 +1788,83 @@ document.addEventListener('DOMContentLoaded', function() {
 <li><p>Find a 90% confidence interval for <span class="math inline">\(\beta_1\)</span></p></li>
 </ol>
 <p>when regressing <code>Sales</code> onto <code>TV</code> in <code>Advertising</code> data.</p>
+<p> </p>
+</div>
+<div id="hypothesis-testing-for-beta_0-and-beta_1" class="section level2">
+<h2>Hypothesis testing for <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span></h2>
+<p>The most common hypothesis test involves testing the null test hypothesis</p>
+<p><span class="math display">\[H_0: \text{}\]</span> <span class="math display">\[H_a: \text{}\]</span></p>
+<p>Mathematically, this corresponds to testing</p>
+<p><span class="math display">\[H_0: \]</span> <span class="math display">\[H_a: \]</span> (since if _______ then the model <span class="math inline">\(Y = \beta_0 + \beta_1X + \epsilon\)</span> reduces to ________, and <span class="math inline">\(X\)</span> is not associated with <span class="math inline">\(Y\)</span>.)</p>
+<p>We usually use four steps to conduct a hypothesis test:</p>
+<ol style="list-style-type: lower-roman">
+<li>State the null and alternative hypothesis:</li>
+</ol>
+<p> </p>
+<ol start="2" style="list-style-type: lower-roman">
+<li>Calculate the test statistic: (get/ calculate this value from the <span class="math inline">\(R\)</span> output)</li>
+</ol>
+<p> </p>
+<p>This test statistic has a <span class="math inline">\(t\)</span>-distribution with <span class="math inline">\(n−2\)</span> degrees of freedom. The <span class="math inline">\(t\)</span>-distribution has a bell shape and for values of <span class="math inline">\(n\)</span> greater than approximately 30 it is quite similar to the normal distribution.</p>
+<ol start="3" style="list-style-type: lower-roman">
+<li>Find the <span class="math inline">\(p\)</span>-value:(get this value from the <span class="math inline">\(R\)</span> output)</li>
+</ol>
+<p> </p>
+<ol start="4" style="list-style-type: lower-roman">
+<li>Make the decision:</li>
+</ol>
+<ul>
+<li><p>If the <span class="math inline">\(p\)</span>-value &lt; the given cutoff (<span class="math inline">\(\alpha\)</span>) level, we reject <span class="math inline">\(H_0\)</span>. Then we say that: there is enough evidence to conclude that there is a linear relationship to exist between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>.</p></li>
+<li><p>If the <span class="math inline">\(p\)</span>-value &gt; the given cutoff (<span class="math inline">\(\alpha\)</span>) level, we do not reject <span class="math inline">\(H_0\)</span>. Then we say that: there is <strong>not</strong> enough evidence to conclude that there is a linear relationship to exist between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>.</p></li>
+</ul>
+<p><strong>Example 6:</strong></p>
+<p>Table below provides details of the least squares model for the regression of number of units sold on <code>TV</code> advertising budget for the <code>Advertising</code> data.</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Coefficient</th>
+<th>Std. error</th>
+<th>t-statistic</th>
+<th>p-value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>Intercept</code></td>
+<td>7.0325</td>
+<td>0.4578</td>
+<td>15.36</td>
+<td>&lt; 0.0001</td>
+</tr>
+<tr class="even">
+<td><code>TV</code></td>
+<td>0.0475</td>
+<td>0.0027</td>
+<td>17.67</td>
+<td>&lt; 0.0001</td>
+</tr>
+</tbody>
+</table>
+<p>Perform a complete four step hypothesis test to check whether there is a linear relationship to exist between <code>TV</code> advertising budget and <code>Sales</code>.</p>
+<ol style="list-style-type: lower-roman">
+<li>State the null and alternative hypothesis:</li>
+</ol>
+<p> </p>
+<ol start="2" style="list-style-type: lower-roman">
+<li>Calculate the test statistic: (get/ calculate this value from the <span class="math inline">\(R\)</span> output)</li>
+</ol>
+<p> </p>
+<ol start="3" style="list-style-type: lower-roman">
+<li>Find the <span class="math inline">\(p\)</span>-value:(get this value from the <span class="math inline">\(R\)</span> output)</li>
+</ol>
+<p> </p>
+<ol start="4" style="list-style-type: lower-roman">
+<li>Make the decision:</li>
+</ol>
+<p> </p>
+<p><strong>Example 7:</strong></p>
+<p>Use <span class="math inline">\(R\)</span> to perform a complete four step hypothesis test to check whether there is a linear relationship to exist between <code>TV</code> advertising budget and <code>Sales</code>.</p>
 </div>
 </div>
 </div>

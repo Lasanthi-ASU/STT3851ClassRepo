@@ -198,5 +198,86 @@ AdvertisingModel <- lm(Sales ~ TV, data = AdvertisingData)
 confint(AdvertisingModel, level = .9)
 ```
 
+&nbsp;
+
+## Hypothesis testing for $\beta_0$ and $\beta_1$
+
+The most common hypothesis test involves testing the null test
+hypothesis
+
+$$H_0: \text{}$$
+$$H_a: \text{}$$
+
+Mathematically, this corresponds to testing
+
+$$H_0: $$
+$$H_a: $$
+(since if _______ then the model $Y = \beta_0 + \beta_1X + \epsilon$ reduces to ________, and $X$ is not associated with $Y$.)
+
+
+We usually use four steps to conduct a hypothesis test:
+
+  i) State the null and alternative hypothesis:
+
+&nbsp;
+
+  ii) Calculate the test statistic: (get/ calculate this value from the $R$ output)
+
+
+&nbsp;
+
+  This test statistic has a $t$-distribution with $n−2$ degrees of freedom. The $t$-distribution has a bell shape and for values of $n$ greater than approximately
+30 it is quite similar to the normal distribution.
+
+  iii) Find the $p$-value:(get this value from the $R$ output)
+
+&nbsp;
+
+  iv) Make the decision: 
+
+  * If the $p$-value < the given cutoff ($\alpha$) level, we reject $H_0$. Then we say that: there is enough evidence to conclude that there is a linear relationship to exist between $X$ and $Y$.
+  
+  * If the $p$-value > the given cutoff ($\alpha$) level, we do not reject $H_0$. Then we say that: there is **not** enough evidence to conclude that there is a linear relationship to exist between $X$ and $Y$.
+
+**Example 6:**
+
+Table below provides details of the least squares model for the regression of
+number of units sold on `TV` advertising budget for the   `Advertising` data.
+
+| | Coefficient | Std. error | t-statistic | p-value |
+| ----- | ----- | ------ | ------- | ------- | 
+| `Intercept` | 7.0325 | 0.4578 | 15.36  | < 0.0001 |
+| `TV` | 0.0475 | 0.0027 | 17.67 | < 0.0001 |
+
+Perform a complete four step hypothesis test to check whether there is a linear relationship to exist between `TV` advertising budget and `Sales`.
+
+  i) State the null and alternative hypothesis:
+
+&nbsp;
+
+  ii) Calculate the test statistic: (get/ calculate this value from the $R$ output)
+
+
+&nbsp;
+
+
+  iii) Find the $p$-value:(get this value from the $R$ output)
+
+&nbsp;
+
+  iv) Make the decision: 
+
+&nbsp;
+
+
+**Example 7:**
+
+Use $R$ to perform a complete four step hypothesis test to check whether there is a linear relationship to exist between `TV` advertising budget and `Sales`.
+
+```{r include=FALSE}
+AdvertisingModel <- lm(Sales ~ TV, data = AdvertisingData)
+summary(AdvertisingModel)
+```
+
 
 
