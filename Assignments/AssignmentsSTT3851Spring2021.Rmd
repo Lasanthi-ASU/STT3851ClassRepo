@@ -142,10 +142,21 @@ output:
 * Before class:
     + Refer to [_bookdown: Authoring Books and Technical Documents with R Markdown_](https://bookdown.org/yihui/bookdown/) as needed
 
+
 * [Chapter 02 Lab](../Labs/LabChap2.html) Due Sunday.
+
 * In class **quiz 03**
 
 * [**Lecture Recordings**](https://appstate.zoom.us/rec/share/RU-cKQYo27N_7ckALqeYICzXlFth6yilkBq99N2-MvKq3zXNdbp4Poi04PXehEo.wx3avop7NdR60wZP)
+```{block,  type='rmdoptional'}
+**Lab 02**
+
+* Start: Reproduce [Lab: Modified Introduction To R](../Labs/LabChap2.html).  
+
+* Submit your html file and Rmd file **Lab 2**, no later than 5 pm Feb 14th.
+
+```
+
 
 ***
 
@@ -178,6 +189,33 @@ output:
 * [**Lecture Recordings**](https://appstate.zoom.us/rec/share/4UPcBZ8wO6vJ2pBGMdmVhoiKYr4idG_4pY80cvc6GaA1R5OQJohDvmcHdsKo5vI.Z0NVNCMN_yyR0lgX)
 
 ***
+
+**Feb 23:**
+
+* [Chapter 3 - Linear Regression](../LectureNotesSp2021/Chapter3.html) --- Take notes in Rmarkdown
+
+* [**Lecture Recordings**](https://appstate.zoom.us/rec/share/a99-aTQt03w9OdvdjAdwNLx0WKkr1twgVjdIsn-8SZpL5yrtUxAx8OYcN9hKledn.rc_HKbXr2iOGqCbe)
+
+***
+
+**Feb 25:**
+
+* [Chapter 3 - Linear Regression](../LectureNotesSp2021/Chapter3.html) --- Take notes in Rmarkdown
+
+* In class **quiz 05**
+
+* [**Lecture Recordings**]()
+
+
+```{block,  type='rmdoptional'}
+**Lab 03**
+
+* Start: Reproduce [Lab: Linear Regression](../Rmarkdown/LabChap3.html).  
+
+* Submit your **Lab 3** html file and Rmd file, no later than 5 pm March 7th.
+
+```
+
 <!--
 
 ```{block, startLab1, type='rmdoptional'}
