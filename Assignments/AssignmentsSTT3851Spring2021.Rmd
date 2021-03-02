@@ -217,7 +217,7 @@ output:
 
 ```
 
-<!--
+
 
 ```{block, startLab1, type='rmdoptional'}
 **Lab 01**
@@ -228,35 +228,44 @@ output:
 
 ```
 
+-->
 
+***
 
-
-**Feb 21:**
+**March 1:**
 
 * Before class:
-    + Read pages 82-120 [ISLR](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf)
-    + Watch [Model Selection and Qualitative Predictors](https://www.youtube.com/watch?v=3T6RXmIHbJ4) (14:51)
-    + Watch [Interactions and Nonlinearity](https://www.youtube.com/watch?v=IFzVxLv0TKQ) (14:16)
     + Watch [Lab: Linear Regression](https://www.youtube.com/watch?v=5ONFqIk3RFg) (22:10)
-* Lecture - Chapter 03  - Take Notes
+    
+* [Chapter 3 - Linear Regression](../LectureNotesSp2021/Chapter3.html) --- Take notes in Rmarkdown
 
-* [Download this `textbooks.bib` file](../Rmarkdown/Fall2019/textbooks.bib)
+***
 
-**Feb 26:**
+**March 3:**
 
-* Lecture - Chapter 03  - Take Notes
+* [Chapter 3 - Linear Regression](../LectureNotesSp2021/Chapter3.html) --- Take notes in Rmarkdown
 
-```{block, startLab2, type='rmdoptional'}
-**Lab 02**
+* In class **quiz 05**
 
-* Start: Reproduce [Lab: Linear Regression](../Rmarkdown/LabChap3.html).  
+```{block,  type='rmdoptional'}
+**Chapter 3 Lab**
 
-* Submit your html file to github **Lab 2** folder, no later than 5 pm Mar 17.
+* Start: Reproduce [Lab: Linear Regression](../Rmarkdown/LabChap3.html_).  
+
+* Submit your **Chapter 3 Lab** html file and the Rmd file, no later than 5 pm March 18th.
 
 ```
 
+***
+
+<!--
 **Feb 28:**
 
+  + Read pages 82-120 [ISLR](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf)
+    + Watch [Model Selection and Qualitative Predictors](https://www.youtube.com/watch?v=3T6RXmIHbJ4) (14:51)
+    + Watch [Interactions and Nonlinearity](https://www.youtube.com/watch?v=IFzVxLv0TKQ) (14:16)
+    * [Download this `textbooks.bib` file](../Rmarkdown/Fall2019/textbooks.bib)
+    
 * Lecture - Chapter 03  - Take Notes
 
 
