@@ -377,7 +377,27 @@ As was the case in the simple linear regression setting, the regression coeffici
   2. Write the MLR equation
   
   3. Interpret each coefficient
+  
+  
 
+### Correlation matrix
+A correlation matrix is a table of correlation coefficients for a set of variables used to determine if a relationship exists between the variables. The coefficient indicates both the strength of the relationship as well as the direction (positive vs. negative correlations)
+
+```{r warning=FALSE, message =FALSE}
+#method 1
+library(corrplot)
+AdvertisingData.cor= cor(AdvertisingData, method = c("spearman"))
+
+corrplot(AdvertisingData.cor)
+
+#method 2
+library(GGally)
+ggpairs(AdvertisingData)
+
+#method 3
+library("PerformanceAnalytics")
+chart.Correlation(AdvertisingData, histogram=TRUE, pch=19)
+```
 
 
 
