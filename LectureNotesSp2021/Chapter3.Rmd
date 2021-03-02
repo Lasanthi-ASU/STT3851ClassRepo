@@ -279,5 +279,111 @@ AdvertisingModel <- lm(Sales ~ TV, data = AdvertisingData)
 summary(AdvertisingModel)
 ```
 
+## Assessing the Accuracy of the Model
+
+The quality of a linear regression fit is typically assessed
+using two related quantities:
+
+  1.
+  2.
+  
+### 1. Residual Standard Error (RSE)
+
+The RSE is considered a measure of the lack of fit of the model to the data.
+
+    $$RSE = $$
+    
+If the predictions obtained using the model are very close to the
+true outcome values—that is, if _________ then RSE will
+be _________, and we can conclude that the model fits the data very well. 
+
+On the other hand, if ___ is very far from ____ for one or more observations, then the RSE may be _________, indicating that the model doesn’t fit the data well.
+
+Units of RSE is same as the unites of the $y$ variable.
+    
+**Example 8:** In the case of the advertising data, find the RSE using R. Interpret this value.
+
+Actual _____ in deviate from the true regression line by approximately _____ units, on average.
+
+### 2. $R^2$ Statistic
+
+The $R^2$ statistic provides an alternative measure of fit.
+
+
+$$R^2 = $$
+where $TSS = \sum(y_i − \bar{y})^2$ is the total sum of squares.
+
+TSS measures the total variance in the response $Y$, and can be  thought of as the amount of variability inherent in the response before the regression is performed.
+
+  * Note that: $0 \leq R^2 \leq 1$
+
+  * How to interpret $R^2$: $R^2$ measures the proportion
+of variability in $Y$ that can be explained using $X$.
+
+  * An $R^2$ statistic that is close to 1 indicates that a large proportion of the variability in the response has been explained by the regression. 
+  
+  * An $R^2$ statistic near 0 indicates that the regression did not explain much of the variability in the response
+  
+  * In the the simple linear regression setting, $R^2 = r^2$. Here $r^2$ is the sample correlation.
+
+
+**Example 9:** In the case of the advertising data, find the $R^2$ using R. Interpret this value.
+
+Using R, verify that $R^2 = r^2$. 
+
+```{r include=FALSE}
+r <- cor(AdvertisingData$TV, AdvertisingData$Sales)
+r^2
+```
+*** 
+
+## Multiple Linear Regression (MLR)
+
+```{r warning=FALSE, message=FALSE, comment=NA}
+library(plotly)
+
+p <- plot_ly(data = AdvertisingData, z = ~Sales, x = ~TV, y = ~Radio, opacity = 0.6, color = AdvertisingData$Sales) %>%
+  add_markers() 
+p
+```
+
+
+Now we have $p$ distinct predictors (not only one as in simple linear regression). Then the multiple linear regression model takes the form
+
+$$$$
+
+where $X_j$ represents the $j$th predictor and $\beta_j$ quantifies the association between that variable and the response. 
+
+  * How to interpret the $\beta_j$ values: We interpret $\beta_j$ as the average effect on $Y$ for a one unit increase in $X_j$ , *holding all other predictors fixed.*
+  
+  
+**Example 10:** In the case of the advertising data, write the MLR model using all the available predictors (`TV`, `Radio`, `Newspaper`) to predict the response `Sales`.
+
+&nbsp;
+
+
+### Estimating the Regression Coefficients
+
+As was the case in the simple linear regression setting, the regression coefficients _________ in the MLR model are unknown, and must be estimated. Given estimates _________ we can make predictions using the formula
+
+&nbsp;
+
+
+
+**Example 11:** In the case of the advertising data;
+
+  1. find the MLR model using all the available predictors to predict the response `Sales` in R.
+  
+  2. Write the MLR equation
+  
+  3. Interpret each coefficient
+
+
+
+
+
+
+
+
 
 

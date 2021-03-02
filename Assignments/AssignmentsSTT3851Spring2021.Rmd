@@ -206,6 +206,7 @@ output:
 
 * [**Lecture Recordings**](https://appstate.zoom.us/rec/share/pDuWKHPTLom8N1e6vWI6lz919QKfQDKWeJAHGHAfRJz_VbwWy3urrJoC3hqq-dHE.pCk5nhwL31sTonX1)
 
+<!--
 
 ```{block,  type='rmdoptional'}
 **Lab 03**
