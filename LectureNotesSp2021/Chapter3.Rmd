@@ -383,7 +383,7 @@ As was the case in the simple linear regression setting, the regression coeffici
 ### Correlation matrix
 A correlation matrix is a table of correlation coefficients for a set of variables used to determine if a relationship exists between the variables. The coefficient indicates both the strength of the relationship as well as the direction (positive vs. negative correlations)
 
-```{r warning=FALSE, message =FALSE}
+```{r warning=FALSE, message =FALSE, include=FALSE}
 #method 1
 library(corrplot)
 AdvertisingData.cor= cor(AdvertisingData, method = c("spearman"))
@@ -399,6 +399,108 @@ library("PerformanceAnalytics")
 chart.Correlation(AdvertisingData, histogram=TRUE, pch=19)
 ```
 
+
+### Some Important Questions:
+
+When we perform multiple linear regression, we usually are interested in answering a few important questions.
+
+  1. Is at least one of the predictors $X_1,X_2, . . . , X_p$ useful in predicting the response?
+  
+  2. Do all the predictors help to explain $Y$ , or is only a subset of the predictors useful?
+  
+  3. How well does the model fit the data?
+  
+  4. Given a set of predictor values, what response value should we predict, and how accurate is our prediction?
+
+We now address each of these questions in turn.
+
+**One: Is There a Relationship Between the Response and Predictors?**
+
+Recall that in the simple linear regression setting, in order to determine whether there is a relationship between the response and the predictor we can simply check whether ________. 
+
+In the multiple regression setting with $p$ predictors, we need to ask whether all of the regression coefficients are zero,
+i.e. whether _______________. 
+
+As in the simple linear regression setting, we use a hypothesis test to answer this question. We test the null hypothesis,
+
+&nbsp;
+
+&nbsp;
+
+
+This hypothesis test is performed by computing the F-statistic,
+
+&nbsp;
+
+In our class, we will use R or a given R output to get the F-statistic.
+
+**Example 11:** Conduct a hypothesis test to check if there is a relationship between `Sales` and the predictor variables `Radio`, `TV` and `Newspaper`. Use the MLR obtained by regressing `Sales` onto `Radio`, `TV` and `Newspaper`.
+
+
+```{r warning=FALSE, message =FALSE, include=FALSE}
+AdvertisingMLRmodel <- lm(Sales ~ TV + Radio + Newspaper, data = AdvertisingData)
+summary(AdvertisingMLRmodel)
+```
+
+&nbsp;
+
+**Two: Deciding on Important Variables**
+
+The task of determining which predictors are associated with
+the response, in order to fit a single model involving only those predictors, is referred to as ________. The variable selection problem is studied  extensively in Chapter 6. 
+
+
+**Three: Model Fit**
+
+  1. Use $R^2$
+  2. Use $RSE = $
+  
+**Four: Predictions**
+  
+  * Confidence interval for *average* $Y$:
+
+We can compute a confidence interval in order to determine how close ____ will be to ____. Confidence Interval will provide an interval estimate for the *average* $Y$.
+  
+  
+**Example 12:** Find a 95% CI for *average* sales when regressing `Sales` onto `Radio`, and `TV`, given that 
+\$100,000 is spent on TV advertising and \$20,000 is spent on radio advertising in each city.
+
+```{r warning=FALSE, message =FALSE, include=FALSE}
+AdvertisingMLRmodel2 <- lm(Sales ~ TV + Radio, data = AdvertisingData)
+summary(AdvertisingMLRmodel2)
+
+xvals <- t(c(100, 20))
+colnames(xvals) <- c("TV", "Radio")
+xvals
+
+predict(AdvertisingMLRmodel2, data.frame(xvals), interval = "confidence", level = 0.950)
+```
+
+Given that interval \$100,000 is spent on TV advertising and \$20,000 is spent on radio advertising
+in each city, the 95% confidence interval for *average* sales is ________.
+
+  
+  * Prediction interval for $Y$ for a future $X$:
+
+Prediction Interval will provide an interval estimate for the $Y$ given a new observation $X$.
+
+**Example 13:** Find a 95\% PI for sales when regressing `Sales` onto `Radio`, and `TV`, given that 
+\$100,000 is spent on TV advertising and \$20,000 is spent on radio advertising in a *particular* city.
+
+
+```{r warning=FALSE, message =FALSE, include=FALSE}
+AdvertisingMLRmodel2 <- lm(Sales ~ TV + Radio, data = AdvertisingData)
+summary(AdvertisingMLRmodel2)
+
+xnew <- t(c(100, 20))
+colnames(xnew) <- c("TV", "Radio")
+xnew
+
+predict(AdvertisingMLRmodel2, data.frame(xnew), interval = "prediction", level = 0.950)
+```
+
+Given that \$100,000 is spent on TV advertising and \$20,000 is spent on radio advertising in that *particular* city
+the 95\% prediction interval for sales is _________.
 
 
 

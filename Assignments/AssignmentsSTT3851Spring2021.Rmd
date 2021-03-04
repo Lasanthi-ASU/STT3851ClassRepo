@@ -232,16 +232,18 @@ output:
 
 ***
 
-**March 1:**
+**March 2:**
 
 * Before class:
     + Watch [Lab: Linear Regression](https://www.youtube.com/watch?v=5ONFqIk3RFg) (22:10)
     
 * [Chapter 3 - Linear Regression](../LectureNotesSp2021/Chapter3.html) --- Take notes in Rmarkdown
 
+* [**Lecture Recordings**](https://appstate.zoom.us/rec/share/bPLJtIFlomQx9ZFRVDO0mMwQ2IXsDbbqI3rhMimcoB8VxrVcCxUPkPywT3XHhcjt.7bvUY0k30cOvZ93A)
+
 ***
 
-**March 3:**
+**March 4:**
 
 * [Chapter 3 - Linear Regression](../LectureNotesSp2021/Chapter3.html) --- Take notes in Rmarkdown
 
