@@ -252,7 +252,7 @@ output:
 ```{block,  type='rmdoptional'}
 **Chapter 3 Lab**
 
-* Start: Reproduce [Lab: Linear Regression](../Rmarkdown/LabChap3.html).  
+* Start: Reproduce [Lab: Linear Regression](../Labs/LabChap3.html).  
 
 * Submit your **Chapter 3 Lab** html file and the Rmd file, no later than 5 pm March 24th.
 
