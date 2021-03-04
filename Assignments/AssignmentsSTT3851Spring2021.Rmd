@@ -247,7 +247,7 @@ output:
 
 * [Chapter 3 - Linear Regression](../LectureNotesSp2021/Chapter3.html) --- Take notes in Rmarkdown
 
-* In class **quiz 05**
+* [**Lecture Recordings**](https://appstate.zoom.us/rec/share/nvoYewLx4-UVoNJdFbYav6w-ZiSZFMGJJM1jaGHBx6dUCuwtwgfuEStUOpTc3RW0.Dz2gOrUywZB1JZfw)
 
 ```{block,  type='rmdoptional'}
 **Chapter 3 Lab**
