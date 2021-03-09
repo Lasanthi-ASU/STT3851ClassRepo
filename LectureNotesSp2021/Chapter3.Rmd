@@ -504,7 +504,134 @@ the 95\% prediction interval for sales is _________.
 
 
 
+## Regression models with Qualitative Predictors
 
+We use the `Credit` data set from the `ISLR` library to illustrate this idea. 
+
+**Problem**: Suppose that we wish to investigate differences in credit card balance between males and females, ignoring the other variables for the moment.
+
+```{r include=FALSE}
+library(ISLR)
+data(Credit)
+head(Credit)
+
+str(Credit)
+```
+
+In this data set we have ___ qualitative variables. Namely, __________.
+
+To answer the problem above, we use the variable `Gender` to predict the `Balance`.
+
+If a qualitative predictor (also known as a factor) only has __________ levels, then incorporating it into a regression model is very simple. 
+
+We simply create an __________ or __________ variable that takes on two possible numerical values. 
+
+For example, based on the gender variable, we can create variable
+a new variable that takes the form
+
+\begin{equation}
+x_i =  \begin{cases} 
+      1 & \text{if ith person is female} \\
+
+      0 & \text{if ith person is male} 
+   \end{cases}
+\end{equation}
+
+and use this variable as a predictor in the regression equation. This results in the model
+
+\begin{equation}
+y_i = \beta_0 + \beta_1x_i + \epsilon_i =  \begin{cases} 
+      \beta_0 + \beta_1+ \epsilon_i & \text{if ith person is female} \\
+
+      \beta_0  + \epsilon_i & \text{if ith person is male} 
+   \end{cases}
+\end{equation}
+   
+   
+```{r include=FALSE}
+model_qualitative <- lm(Balance ~ Gender, data = Credit)
+summary(model_qualitative)
+```
+
+Use the output above and write the model
+
+\begin{equation}
+\hat{Blanace} = 509.80 + 19.73 \times (Female)  =  \begin{cases} 
+      509.80 + 19.73 & \text{if  person is female} \\
+
+      509.80   & \text{if  person is male} 
+   \end{cases}
+\end{equation}
+
+
+**How to interpret the coefficients of dummy variables?**
+
+*509.80:* The average credit card debt for males is
+estimated to be $509.80. 
+
+*19.73:* The average difference in credit card balance between females and males is $19.73.
+
+
+**Example 14:** Suppose that we wish to investigate differences in credit card balance using marital status, ignoring the other variables for the moment. Fit a model and interpret its coefficients.
+
+```{r include=FALSE}
+model_qualitative1 <- lm(Balance ~ Married, data = Credit)
+summary(model_qualitative1)
+```
+model:
+
+&nbsp;
+
+Interpretation:
+
+&nbsp;
+
+
+**Example 15:** Suppose that we wish to investigate differences in credit card balance using ethnicity, ignoring the other variables for the moment. Fit a model and interpret its coefficients.
+
+```{r include=FALSE}
+str(Credit)
+?Credit # to see the variable descriptions
+
+model_qualitative2 <- lm(Balance ~ Ethnicity, data = Credit)
+summary(model_qualitative2)
+
+```
+
+  1. What is the baseline category for the `Ethnicity` variable in this model?
+  
+  2. Write the equation of the model
+
+<!--
+\begin{equation}
+\hat{Blanace} = 531.00 -18.69 \times (Asian) - 12.5 \times (Caucasian) =  \begin{cases} 
+      531.00 -18.69 \times (1) - 12.5 \times (0) & \text{if person is Asian} \\
+
+      531.00 -18.69 \times (0) - 12.5 \times (1)   & \text{if person is Caucasian} \\
+      
+      531.00 -18.69 \times (0) - 12.5 \times (0)   & \text{if person is African American}
+   \end{cases}
+\end{equation}
+-->
+
+  3. Interpret the coefficients
+  
+<!--
+  * 531: The estimated balance for the baseline, African American is $531.
+      
+  * -18.69: Asian  category will have $18.69 *less* debt than the baseline, African Americans.
+  
+  * -12.5: Caucasian  category will have $12.59 *less* debt than the baseline, African Americans.
+-->
+  4. Interpret the predicted values
+
+  <!--
+  * Average debt for African American is $531.00 -18.69 \times (0) - 12.5 \times (0) = \$531$
+  
+  * Average debt for Caucasian is $531.00 -18.69 \times (0) - 12.5 \times (1) = \$518.5$
+  
+  * Average debt for Asian is $531.00 -18.69 \times (1) - 12.5 \times (0) = \$512.31$
+-->  
 
 
 

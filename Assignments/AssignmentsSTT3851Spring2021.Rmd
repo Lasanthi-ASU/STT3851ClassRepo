@@ -260,41 +260,49 @@ output:
 
 ***
 
-<!--
-**Feb 28:**
+
+**March 09:**
+
+* Before class:
 
   + Read pages 82-120 [ISLR](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf)
     + Watch [Model Selection and Qualitative Predictors](https://www.youtube.com/watch?v=3T6RXmIHbJ4) (14:51)
-    + Watch [Interactions and Nonlinearity](https://www.youtube.com/watch?v=IFzVxLv0TKQ) (14:16)
-    * [Download this `textbooks.bib` file](../Rmarkdown/Fall2019/textbooks.bib)
     
-* Lecture - Chapter 03  - Take Notes
+* [Chapter 3 - Linear Regression](../LectureNotesSp2021/Chapter3.html) --- Take notes in Rmarkdown
 
+* [**Lecture Recordings**]()
 
+***
 
-**~~Mar 04 - Mar 08:~~ ** **No Class - Spring Break**
+**March 11:**
 
-**Mar 12:**
+* Before class:
 
+    + Watch [Interactions and Nonlinearity](https://www.youtube.com/watch?v=IFzVxLv0TKQ) (14:16)
+    
+* [Chapter 3 - Linear Regression](../LectureNotesSp2021/Chapter3.html) --- Take notes in Rmarkdown
+    
 * In class **quiz 06**
 
-
-* Lecture - Chapter 03  - Take Notes
-<!--* [Work on Project 1](../Rmarkdown/DirectionsMHP.html)-->
-<!--* [Code for class notes](../Rmarkdown/BodyTemperatures.html)
+* [**Lecture Recordings**]()
 
 
+***
+
+<!--
 **Mar 14:**
 
 * Lecture - Chapter 03 - Take Notes
 * [Chapter 3 Applied Problems](../3-15-18/ch3_applied.pdf)
 
-
+* [Download this `textbooks.bib` file](../Rmarkdown/Fall2019/textbooks.bib)
 
 
 **Mar 19:**
 
 
+<!--* [Work on Project 1](../Rmarkdown/DirectionsMHP.html)-->
+<!--* [Code for class notes](../Rmarkdown/BodyTemperatures.html)
 
 ```{block, startProject1, type='rmdoptional'}
 
