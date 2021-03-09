@@ -270,7 +270,7 @@ output:
     
 * [Chapter 3 - Linear Regression](../LectureNotesSp2021/Chapter3.html) --- Take notes in Rmarkdown
 
-* [**Lecture Recordings**]()
+* [**Lecture Recordings**](https://appstate.zoom.us/rec/share/3DMaalegF6YDexLknJHEbCoRQiR1nkw2P0gCGumPW6vatiaMAu5bZo-SyGd-dDaI.IEmIjRV-UCPEK3pF)
 
 ***
 
