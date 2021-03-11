@@ -655,6 +655,7 @@ We can interpret ____ as the increase in the effectiveness of TV advertising for
 
 Fit a linear regression model to Advertising dataset with an interaction term that uses `radio`, `TV`, and `an interaction between the two` to predict `sales`.
 
+Write down your final model.
 
 ```{r include=FALSE}
 model_interaction <- lm(Sales ~ TV +Radio +TV*Radio, data = AdvertisingData)
@@ -673,8 +674,7 @@ However, it is sometimes the case that an interaction term has a very ______ p-v
 The hierarchical principle states that *if we include an interaction in a model, we  should also include the main effects, even if the p-values associated with  their coefficients are ___ significant. 
 
 In other words, if the interaction between
-$X_1$ and $X_2$ seems important, then we should include both $X_1$ and
-$X_2$ in the model even if their coefficient estimates have large p-values.  
+$X_1$ and $X_2$ seems important, then we should include both $X_1$ and $X_2$ in the model even if their coefficient estimates have large p-values.  
   
 
 
