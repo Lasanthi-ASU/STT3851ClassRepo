@@ -633,6 +633,48 @@ summary(model_qualitative2)
   * Average debt for Asian is $531.00 -18.69 \times (1) - 12.5 \times (0) = \$512.31$
 -->  
 
+## Regression models with interactions
 
+Consider the standard linear regression model with two variables,
+
+&nbsp;
+
+According to this model, if we increase $X_1$ by one unit, then Y will increase by an average of _____ units. Notice that the presence of $X_2$ does not alter this statement—that is, regardless of the value of $X_2$, a one-unit increase in $X_1$ will lead to a ___-unit increase in Y .
+One way of extending this model to allow for ______ effects is to include a third predictor, called an
+interaction term, which is constructed by computing the *product of $X_1$ and $X_2$*. This results in the model
+
+&nbsp;
+
+Exercise: Consider the Advertising example. write a linear model that uses `radio`, `TV`, and `an interaction between the two` to predict `sales`.
+
+&nbsp;
+
+We can interpret ____ as the increase in the effectiveness of TV advertising for a one unit increase in radio advertising (or vice-versa).
+
+**Example 16:**
+
+Fit a linear regression model to Advertising dataset with an interaction term that uses `radio`, `TV`, and `an interaction between the two` to predict `sales`.
+
+
+```{r include=FALSE}
+model_interaction <- lm(Sales ~ TV +Radio +TV*Radio, data = AdvertisingData)
+summary(model_interaction)
+```
+
+Perform a hypothesis test to check whether the interaction effect term is useful in the model.
+
+&nbsp;
+
+
+Note: In this example, the p-values associated with TV, radio, and the interaction term all are statistically ________, and so it is obvious
+that all three variables should be included in the model.
+
+However, it is sometimes the case that an interaction term has a very ______ p-value, but the associated main effects (in this case, TV and radio) do not.
+The hierarchical principle states that *if we include an interaction in a model, we  should also include the main effects, even if the p-values associated with  their coefficients are ___ significant. 
+
+In other words, if the interaction between
+$X_1$ and $X_2$ seems important, then we should include both $X_1$ and
+$X_2$ in the model even if their coefficient estimates have large p-values.  
+  
 
 
